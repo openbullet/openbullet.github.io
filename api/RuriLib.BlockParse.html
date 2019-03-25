@@ -1,0 +1,766 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlockParse
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlockParse
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.BlockParse">
+  
+  
+  <h1 id="RuriLib_BlockParse" data-uid="RuriLib.BlockParse" class="text-break">Class BlockParse
+  </h1>
+  <div class="markdown level0 summary"><p>A block that parses data from a string.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="RuriLib.ViewModels.ViewModelBase.html">ViewModelBase</a></div>
+    <div class="level2"><a class="xref" href="RuriLib.BlockBase.html">BlockBase</a></div>
+    <div class="level3"><span class="xref">BlockParse</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_Label">BlockBase.Label</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_Disabled">BlockBase.Disabled</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_IsSelenium">BlockBase.IsSelenium</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_IsCaptcha">BlockBase.IsCaptcha</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_FromLS_System_Collections_Generic_List_System_String__">BlockBase.FromLS(List&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_ReplaceValuesRecursive_System_String_RuriLib_BotData_">BlockBase.ReplaceValuesRecursive(String, BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_ReplaceValues_System_String_RuriLib_BotData_">BlockBase.ReplaceValues(String, BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_ParseArguments_System_String_System_Char_System_Char_">BlockBase.ParseArguments(String, Char, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_UpdateSeleniumData_RuriLib_BotData_">BlockBase.UpdateSeleniumData(BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_InsertVariables_RuriLib_BotData_System_Boolean_System_Boolean_System_Collections_Generic_List_System_String__System_String_System_String_System_String_">BlockBase.InsertVariables(BotData, Boolean, Boolean, List&lt;String&gt;, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_SaveScreenshot_OpenQA_Selenium_Screenshot_RuriLib_BotData_">BlockBase.SaveScreenshot(Screenshot, BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_SaveScreenshot_System_Drawing_Bitmap_RuriLib_BotData_">BlockBase.SaveScreenshot(Bitmap, BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_GetFirstAvailableFileName_System_String_System_String_System_String_">BlockBase.GetFirstAvailableFileName(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_MakeValidFileName_System_String_System_Boolean_">BlockBase.MakeValidFileName(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_TruncatePretty_System_String_System_Int32_">BlockBase.TruncatePretty(String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.ViewModels.ViewModelBase.html#RuriLib_ViewModels_ViewModelBase_PropertyChanged">ViewModelBase.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.ViewModels.ViewModelBase.html#RuriLib_ViewModels_ViewModelBase_OnPropertyChanged_System_String_">ViewModelBase.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.html">RuriLib</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_BlockParse_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BlockParse : BlockBase, INotifyPropertyChanged</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RuriLib_BlockParse__ctor_" data-uid="RuriLib.BlockParse.#ctor*"></a>
+  <h4 id="RuriLib_BlockParse__ctor" data-uid="RuriLib.BlockParse.#ctor">BlockParse()</h4>
+  <div class="markdown level1 summary"><p>Creates a Parse block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockParse()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RuriLib_BlockParse_AttributeName_" data-uid="RuriLib.BlockParse.AttributeName*"></a>
+  <h4 id="RuriLib_BlockParse_AttributeName" data-uid="RuriLib.BlockParse.AttributeName">AttributeName</h4>
+  <div class="markdown level1 summary"><p>The name of the attribute from which to parse the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AttributeName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_CssElementIndex_" data-uid="RuriLib.BlockParse.CssElementIndex*"></a>
+  <h4 id="RuriLib_BlockParse_CssElementIndex" data-uid="RuriLib.BlockParse.CssElementIndex">CssElementIndex</h4>
+  <div class="markdown level1 summary"><p>The index of the desired element when the selector matches multiple elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CssElementIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_CssSelector_" data-uid="RuriLib.BlockParse.CssSelector*"></a>
+  <h4 id="RuriLib_BlockParse_CssSelector" data-uid="RuriLib.BlockParse.CssSelector">CssSelector</h4>
+  <div class="markdown level1 summary"><p>The CSS selector that addresses the desired element in the HTML page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CssSelector { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_IsCapture_" data-uid="RuriLib.BlockParse.IsCapture*"></a>
+  <h4 id="RuriLib_BlockParse_IsCapture" data-uid="RuriLib.BlockParse.IsCapture">IsCapture</h4>
+  <div class="markdown level1 summary"><p>Whether the output variable should be marked as Capture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCapture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_JsonField_" data-uid="RuriLib.BlockParse.JsonField*"></a>
+  <h4 id="RuriLib_BlockParse_JsonField" data-uid="RuriLib.BlockParse.JsonField">JsonField</h4>
+  <div class="markdown level1 summary"><p>The name of the json field for which we want to retrieve the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string JsonField { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_LeftString_" data-uid="RuriLib.BlockParse.LeftString*"></a>
+  <h4 id="RuriLib_BlockParse_LeftString" data-uid="RuriLib.BlockParse.LeftString">LeftString</h4>
+  <div class="markdown level1 summary"><p>The string to the immediate left of the text to parse. An empty string means the start of the input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LeftString { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_ParseTarget_" data-uid="RuriLib.BlockParse.ParseTarget*"></a>
+  <h4 id="RuriLib_BlockParse_ParseTarget" data-uid="RuriLib.BlockParse.ParseTarget">ParseTarget</h4>
+  <div class="markdown level1 summary"><p>The string to parse data from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ParseTarget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_Prefix_" data-uid="RuriLib.BlockParse.Prefix*"></a>
+  <h4 id="RuriLib_BlockParse_Prefix" data-uid="RuriLib.BlockParse.Prefix">Prefix</h4>
+  <div class="markdown level1 summary"><p>The string to add to the beginning of the parsed data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Prefix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_Recursive_" data-uid="RuriLib.BlockParse.Recursive*"></a>
+  <h4 id="RuriLib_BlockParse_Recursive" data-uid="RuriLib.BlockParse.Recursive">Recursive</h4>
+  <div class="markdown level1 summary"><p>Whether to parse multiple values that match the criteria or just the first one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Recursive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_RegexOutput_" data-uid="RuriLib.BlockParse.RegexOutput*"></a>
+  <h4 id="RuriLib_BlockParse_RegexOutput" data-uid="RuriLib.BlockParse.RegexOutput">RegexOutput</h4>
+  <div class="markdown level1 summary"><p>The way the content of the matched groups should be formatted. [0] will be replaced with the full match, [1] with the first group etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RegexOutput { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_RegexString_" data-uid="RuriLib.BlockParse.RegexString*"></a>
+  <h4 id="RuriLib_BlockParse_RegexString" data-uid="RuriLib.BlockParse.RegexString">RegexString</h4>
+  <div class="markdown level1 summary"><p>The regex pattern that matches parts of the text inside groups.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RegexString { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_RightString_" data-uid="RuriLib.BlockParse.RightString*"></a>
+  <h4 id="RuriLib_BlockParse_RightString" data-uid="RuriLib.BlockParse.RightString">RightString</h4>
+  <div class="markdown level1 summary"><p>The string to the immediate right of the text to parse. An empty string means the end of the input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RightString { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_Suffix_" data-uid="RuriLib.BlockParse.Suffix*"></a>
+  <h4 id="RuriLib_BlockParse_Suffix" data-uid="RuriLib.BlockParse.Suffix">Suffix</h4>
+  <div class="markdown level1 summary"><p>The string to add to the end of the parsed data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Suffix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_Type_" data-uid="RuriLib.BlockParse.Type*"></a>
+  <h4 id="RuriLib_BlockParse_Type" data-uid="RuriLib.BlockParse.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The parsing algorithm being used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParseType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.ParseType.html">ParseType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_UseRegexLR_" data-uid="RuriLib.BlockParse.UseRegexLR*"></a>
+  <h4 id="RuriLib_BlockParse_UseRegexLR" data-uid="RuriLib.BlockParse.UseRegexLR">UseRegexLR</h4>
+  <div class="markdown level1 summary"><p>Whether to use a regex pattern to match a text between two strings instead of the standard algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseRegexLR { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockParse_VariableName_" data-uid="RuriLib.BlockParse.VariableName*"></a>
+  <h4 id="RuriLib_BlockParse_VariableName" data-uid="RuriLib.BlockParse.VariableName">VariableName</h4>
+  <div class="markdown level1 summary"><p>The name of the output variable where the parsed text will be stored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VariableName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_BlockParse_FromLS_" data-uid="RuriLib.BlockParse.FromLS*"></a>
+  <h4 id="RuriLib_BlockParse_FromLS_System_String_" data-uid="RuriLib.BlockParse.FromLS(System.String)">FromLS(String)</h4>
+  <div class="markdown level1 summary"><p>Builds a block from a line of LoliScript code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override BlockBase FromLS(string line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>The line of LoliScript code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BlockBase.html">BlockBase</a></td>
+        <td><p>The parsed block object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_FromLS_System_String_">BlockBase.FromLS(String)</a></div>
+  
+  
+  <a id="RuriLib_BlockParse_Process_" data-uid="RuriLib.BlockParse.Process*"></a>
+  <h4 id="RuriLib_BlockParse_Process_RuriLib_BotData_" data-uid="RuriLib.BlockParse.Process(RuriLib.BotData)">Process(BotData)</h4>
+  <div class="markdown level1 summary"><p>Executes the actual block logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Process(BotData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BotData.html">BotData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The BotData needed for variable replacement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_Process_RuriLib_BotData_">BlockBase.Process(BotData)</a></div>
+  
+  
+  <a id="RuriLib_BlockParse_ToLS_" data-uid="RuriLib.BlockParse.ToLS*"></a>
+  <h4 id="RuriLib_BlockParse_ToLS_System_Boolean_" data-uid="RuriLib.BlockParse.ToLS(System.Boolean)">ToLS(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Converts the block to LoliScript code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToLS(bool indent = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">indent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_ToLS_System_Boolean_">BlockBase.ToLS(Boolean)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

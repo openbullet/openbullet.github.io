@@ -1,0 +1,847 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VariableList
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VariableList
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.Models.VariableList">
+  
+  
+  <h1 id="RuriLib_Models_VariableList" data-uid="RuriLib.Models.VariableList" class="text-break">Class VariableList
+  </h1>
+  <div class="markdown level0 summary"><p>Class that allows to easily manage a list of CVar objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VariableList</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.Models.html">RuriLib.Models</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_Models_VariableList_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VariableList</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RuriLib_Models_VariableList__ctor_" data-uid="RuriLib.Models.VariableList.#ctor*"></a>
+  <h4 id="RuriLib_Models_VariableList__ctor" data-uid="RuriLib.Models.VariableList.#ctor">VariableList()</h4>
+  <div class="markdown level1 summary"><p>Standard constructor that initializes an empty variable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableList()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_Models_VariableList__ctor_" data-uid="RuriLib.Models.VariableList.#ctor*"></a>
+  <h4 id="RuriLib_Models_VariableList__ctor_System_Collections_Generic_List_RuriLib_Models_CVar__" data-uid="RuriLib.Models.VariableList.#ctor(System.Collections.Generic.List{RuriLib.Models.CVar})">VariableList(List&lt;CVar&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a variable list starting from an existing list of variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableList(List&lt;CVar&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CVar.html">CVar</a>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The list of variables.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RuriLib_Models_VariableList_All_" data-uid="RuriLib.Models.VariableList.All*"></a>
+  <h4 id="RuriLib_Models_VariableList_All" data-uid="RuriLib.Models.VariableList.All">All</h4>
+  <div class="markdown level1 summary"><p>The whole list of variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CVar&gt; All { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CVar.html">CVar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_Captures_" data-uid="RuriLib.Models.VariableList.Captures*"></a>
+  <h4 id="RuriLib_Models_VariableList_Captures" data-uid="RuriLib.Models.VariableList.Captures">Captures</h4>
+  <div class="markdown level1 summary"><p>The list of all variables marked as Capture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public List&lt;CVar&gt; Captures { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CVar.html">CVar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_Dictionaries_" data-uid="RuriLib.Models.VariableList.Dictionaries*"></a>
+  <h4 id="RuriLib_Models_VariableList_Dictionaries" data-uid="RuriLib.Models.VariableList.Dictionaries">Dictionaries</h4>
+  <div class="markdown level1 summary"><p>The list of all variables of type Dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public List&lt;CVar&gt; Dictionaries { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CVar.html">CVar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_Lists_" data-uid="RuriLib.Models.VariableList.Lists*"></a>
+  <h4 id="RuriLib_Models_VariableList_Lists" data-uid="RuriLib.Models.VariableList.Lists">Lists</h4>
+  <div class="markdown level1 summary"><p>The list of all variables of type List.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public List&lt;CVar&gt; Lists { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CVar.html">CVar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_Singles_" data-uid="RuriLib.Models.VariableList.Singles*"></a>
+  <h4 id="RuriLib_Models_VariableList_Singles" data-uid="RuriLib.Models.VariableList.Singles">Singles</h4>
+  <div class="markdown level1 summary"><p>The list of all variables of type Single.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public List&lt;CVar&gt; Singles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CVar.html">CVar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_Models_VariableList_Get_" data-uid="RuriLib.Models.VariableList.Get*"></a>
+  <h4 id="RuriLib_Models_VariableList_Get_System_String_" data-uid="RuriLib.Models.VariableList.Get(System.String)">Get(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a variable given its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CVar Get(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CVar.html">CVar</a></td>
+        <td><p>The variable or null if it wasn&apos;t found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_Get_" data-uid="RuriLib.Models.VariableList.Get*"></a>
+  <h4 id="RuriLib_Models_VariableList_Get_System_String_RuriLib_Models_CVar_VarType_" data-uid="RuriLib.Models.VariableList.Get(System.String,RuriLib.Models.CVar.VarType)">Get(String, CVar.VarType)</h4>
+  <div class="markdown level1 summary"><p>Gets a variable given its name and type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CVar Get(string name, CVar.VarType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the variable</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CVar.VarType.html">CVar.VarType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CVar.html">CVar</a></td>
+        <td><p>The variable or null if it wasn&apos;t found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_GetDictionary_" data-uid="RuriLib.Models.VariableList.GetDictionary*"></a>
+  <h4 id="RuriLib_Models_VariableList_GetDictionary_System_String_" data-uid="RuriLib.Models.VariableList.GetDictionary(System.String)">GetDictionary(String)</h4>
+  <div class="markdown level1 summary"><p>Helper method that gets the value of a variable of type Dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; GetDictionary(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the Dictionary variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><p>The dictionary value or null if it wasn&apos;t found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_GetList_" data-uid="RuriLib.Models.VariableList.GetList*"></a>
+  <h4 id="RuriLib_Models_VariableList_GetList_System_String_" data-uid="RuriLib.Models.VariableList.GetList(System.String)">GetList(String)</h4>
+  <div class="markdown level1 summary"><p>Helper method that gets the value of a variable of type List.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetList(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the List variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The list of strings value or null if it wasn&apos;t found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_GetSingle_" data-uid="RuriLib.Models.VariableList.GetSingle*"></a>
+  <h4 id="RuriLib_Models_VariableList_GetSingle_System_String_" data-uid="RuriLib.Models.VariableList.GetSingle(System.String)">GetSingle(String)</h4>
+  <div class="markdown level1 summary"><p>Helper method that gets the value of a variable of type Single.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSingle(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the Single variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string value or null if it wasn&apos;t found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_Remove_" data-uid="RuriLib.Models.VariableList.Remove*"></a>
+  <h4 id="RuriLib_Models_VariableList_Remove_RuriLib_Condition_System_String_RuriLib_BotData_" data-uid="RuriLib.Models.VariableList.Remove(RuriLib.Condition,System.String,RuriLib.BotData)">Remove(Condition, String, BotData)</h4>
+  <div class="markdown level1 summary"><p>Removes all non-hidden variables if their name matches a condition.</p>
+<p>The name of the variables in the list are the left-hand term of the comparison.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(Condition cond, string name, BotData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Condition.html">Condition</a></td>
+        <td><span class="parametername">cond</span></td>
+        <td><p>The condition type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The right-hand term of the comparison</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RuriLib.BotData.html">BotData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The BotData object used for variable replacement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_Remove_" data-uid="RuriLib.Models.VariableList.Remove*"></a>
+  <h4 id="RuriLib_Models_VariableList_Remove_System_String_" data-uid="RuriLib.Models.VariableList.Remove(System.String)">Remove(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a non-hidden variable given its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the variable to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_Set_" data-uid="RuriLib.Models.VariableList.Set*"></a>
+  <h4 id="RuriLib_Models_VariableList_Set_RuriLib_Models_CVar_" data-uid="RuriLib.Models.VariableList.Set(RuriLib.Models.CVar)">Set(CVar)</h4>
+  <div class="markdown level1 summary"><p>Adds a CVar object to the variable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(CVar variable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CVar.html">CVar</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td><p>The CVar object to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_SetHidden_" data-uid="RuriLib.Models.VariableList.SetHidden*"></a>
+  <h4 id="RuriLib_Models_VariableList_SetHidden_System_String_System_Object_" data-uid="RuriLib.Models.VariableList.SetHidden(System.String,System.Object)">SetHidden(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds a hidden CVar object to the variable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHidden(string name, dynamic value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the variable to add</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the variable to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_SetNew_" data-uid="RuriLib.Models.VariableList.SetNew*"></a>
+  <h4 id="RuriLib_Models_VariableList_SetNew_RuriLib_Models_CVar_" data-uid="RuriLib.Models.VariableList.SetNew(RuriLib.Models.CVar)">SetNew(CVar)</h4>
+  <div class="markdown level1 summary"><p>Adds a CVar object to the variable list only if no other variable with the same name exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNew(CVar variable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CVar.html">CVar</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td><p>The CVar object to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_ToCaptureString_" data-uid="RuriLib.Models.VariableList.ToCaptureString*"></a>
+  <h4 id="RuriLib_Models_VariableList_ToCaptureString" data-uid="RuriLib.Models.VariableList.ToCaptureString">ToCaptureString()</h4>
+  <div class="markdown level1 summary"><p>Generates a string where all the variables marked as Capture are printed in an organized fashion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToCaptureString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The chained capture string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_VariableExists_" data-uid="RuriLib.Models.VariableList.VariableExists*"></a>
+  <h4 id="RuriLib_Models_VariableList_VariableExists_System_String_" data-uid="RuriLib.Models.VariableList.VariableExists(System.String)">VariableExists(String)</h4>
+  <div class="markdown level1 summary"><p>Helper method that checks if a variable exists given its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool VariableExists(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the variable exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_VariableList_VariableExists_" data-uid="RuriLib.Models.VariableList.VariableExists*"></a>
+  <h4 id="RuriLib_Models_VariableList_VariableExists_System_String_RuriLib_Models_CVar_VarType_" data-uid="RuriLib.Models.VariableList.VariableExists(System.String,RuriLib.Models.CVar.VarType)">VariableExists(String, CVar.VarType)</h4>
+  <div class="markdown level1 summary"><p>Helper method that checks if a variable exists given its name and type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool VariableExists(string name, CVar.VarType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the variable</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CVar.VarType.html">CVar.VarType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the variable exists and matches the given type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

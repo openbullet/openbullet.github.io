@@ -1,0 +1,1017 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BotData
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BotData
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.BotData">
+  
+  
+  <h1 id="RuriLib_BotData" data-uid="RuriLib.BotData" class="text-break">Class BotData
+  </h1>
+  <div class="markdown level0 summary"><p>Class that holds all the variables needed for checking a single data line.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BotData</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.html">RuriLib</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_BotData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BotData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RuriLib_BotData__ctor_" data-uid="RuriLib.BotData.#ctor*"></a>
+  <h4 id="RuriLib_BotData__ctor_RuriLib_ViewModels_RLSettingsViewModel_RuriLib_ConfigSettings_RuriLib_Models_CData_RuriLib_Models_CProxy_System_Boolean_System_Int32_System_Boolean_" data-uid="RuriLib.BotData.#ctor(RuriLib.ViewModels.RLSettingsViewModel,RuriLib.ConfigSettings,RuriLib.Models.CData,RuriLib.Models.CProxy,System.Boolean,System.Int32,System.Boolean)">BotData(RLSettingsViewModel, ConfigSettings, CData, CProxy, Boolean, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a BotData object given some parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BotData(RLSettingsViewModel globalSettings, ConfigSettings configSettings, CData data, CProxy proxy, bool useProxies, int botNumber = 0, bool isDebug = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.ViewModels.RLSettingsViewModel.html">RLSettingsViewModel</a></td>
+        <td><span class="parametername">globalSettings</span></td>
+        <td><p>The global RuriLib settings</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RuriLib.ConfigSettings.html">ConfigSettings</a></td>
+        <td><span class="parametername">configSettings</span></td>
+        <td><p>The settings for the current Config</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CData.html">CData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The wrapped data line to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a></td>
+        <td><span class="parametername">proxy</span></td>
+        <td><p>The proxy to use (set to null if none)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useProxies</span></td>
+        <td><p>Whether to use the proxy for requests</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">botNumber</span></td>
+        <td><p>The number of the bot that is creating this object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDebug</span></td>
+        <td><p>Whether this object is created from a Debugger or from a Runner</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="RuriLib_BotData_CustomStatus" data-uid="RuriLib.BotData.CustomStatus">CustomStatus</h4>
+  <div class="markdown level1 summary"><p>The Custom Status name in case the Status was set to Custom.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CustomStatus</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RuriLib_BotData_rand" data-uid="RuriLib.BotData.rand">rand</h4>
+  <div class="markdown level1 summary"><p>A random number generator that methods can refer to, in order to avoid the generation of the same random number if executed in rapid succession.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Random rand</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Random</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RuriLib_BotData_Address_" data-uid="RuriLib.BotData.Address*"></a>
+  <h4 id="RuriLib_BotData_Address" data-uid="RuriLib.BotData.Address">Address</h4>
+  <div class="markdown level1 summary"><p>The return Address of the HttpResponse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Address { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_Balance_" data-uid="RuriLib.BotData.Balance*"></a>
+  <h4 id="RuriLib_BotData_Balance" data-uid="RuriLib.BotData.Balance">Balance</h4>
+  <div class="markdown level1 summary"><p>The remaining balance on the captcha service account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Balance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_BotNumber_" data-uid="RuriLib.BotData.BotNumber*"></a>
+  <h4 id="RuriLib_BotData_BotNumber" data-uid="RuriLib.BotData.BotNumber">BotNumber</h4>
+  <div class="markdown level1 summary"><p>The id of the current Bot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BotNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_BrowserOpen_" data-uid="RuriLib.BotData.BrowserOpen*"></a>
+  <h4 id="RuriLib_BotData_BrowserOpen" data-uid="RuriLib.BotData.BrowserOpen">BrowserOpen</h4>
+  <div class="markdown level1 summary"><p>Whether the browser is open or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BrowserOpen { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_CaptchaService_" data-uid="RuriLib.BotData.CaptchaService*"></a>
+  <h4 id="RuriLib_BotData_CaptchaService" data-uid="RuriLib.BotData.CaptchaService">CaptchaService</h4>
+  <div class="markdown level1 summary"><p>The captcha service currently being used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CaptchaService CaptchaService { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.CaptchaServices.CaptchaService.html">CaptchaService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_ConfigSettings_" data-uid="RuriLib.BotData.ConfigSettings*"></a>
+  <h4 id="RuriLib_BotData_ConfigSettings" data-uid="RuriLib.BotData.ConfigSettings">ConfigSettings</h4>
+  <div class="markdown level1 summary"><p>The settings for the current Config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigSettings ConfigSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.ConfigSettings.html">ConfigSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_Cookies_" data-uid="RuriLib.BotData.Cookies*"></a>
+  <h4 id="RuriLib_BotData_Cookies" data-uid="RuriLib.BotData.Cookies">Cookies</h4>
+  <div class="markdown level1 summary"><p>The dictionary of cookies of the HttpResponse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; Cookies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_Data_" data-uid="RuriLib.BotData.Data*"></a>
+  <h4 id="RuriLib_BotData_Data" data-uid="RuriLib.BotData.Data">Data</h4>
+  <div class="markdown level1 summary"><p>The wrapped data line that needs to be checked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CData Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CData.html">CData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_Driver_" data-uid="RuriLib.BotData.Driver*"></a>
+  <h4 id="RuriLib_BotData_Driver" data-uid="RuriLib.BotData.Driver">Driver</h4>
+  <div class="markdown level1 summary"><p>The selenium webdriver currently being used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RemoteWebDriver Driver { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OpenQA.Selenium.Remote.RemoteWebDriver</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_GlobalCookies_" data-uid="RuriLib.BotData.GlobalCookies*"></a>
+  <h4 id="RuriLib_BotData_GlobalCookies" data-uid="RuriLib.BotData.GlobalCookies">GlobalCookies</h4>
+  <div class="markdown level1 summary"><p>The global cookies shared between all the Bots. They are set in the local cookie jar at the start of the check.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; GlobalCookies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_GlobalSettings_" data-uid="RuriLib.BotData.GlobalSettings*"></a>
+  <h4 id="RuriLib_BotData_GlobalSettings" data-uid="RuriLib.BotData.GlobalSettings">GlobalSettings</h4>
+  <div class="markdown level1 summary"><p>The Global RuriLib settings valid for any Config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RLSettingsViewModel GlobalSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.ViewModels.RLSettingsViewModel.html">RLSettingsViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_GlobalVariables_" data-uid="RuriLib.BotData.GlobalVariables*"></a>
+  <h4 id="RuriLib_BotData_GlobalVariables" data-uid="RuriLib.BotData.GlobalVariables">GlobalVariables</h4>
+  <div class="markdown level1 summary"><p>The global variables shared between all the Bots. They can be accessed or set by any bot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableList GlobalVariables { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.VariableList.html">VariableList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_IsDebug_" data-uid="RuriLib.BotData.IsDebug*"></a>
+  <h4 id="RuriLib_BotData_IsDebug" data-uid="RuriLib.BotData.IsDebug">IsDebug</h4>
+  <div class="markdown level1 summary"><p>Whether this object is being used for a Debugger or for the Runner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDebug { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_LogBuffer_" data-uid="RuriLib.BotData.LogBuffer*"></a>
+  <h4 id="RuriLib_BotData_LogBuffer" data-uid="RuriLib.BotData.LogBuffer">LogBuffer</h4>
+  <div class="markdown level1 summary"><p>The detailed log of the last block that was run.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;LogEntry&gt; LogBuffer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.LogEntry.html">LogEntry</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_NETStream_" data-uid="RuriLib.BotData.NETStream*"></a>
+  <h4 id="RuriLib_BotData_NETStream" data-uid="RuriLib.BotData.NETStream">NETStream</h4>
+  <div class="markdown level1 summary"><p>The NET Stream used for TCP blocks with unencrypted connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkStream NETStream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Sockets.NetworkStream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_Proxy_" data-uid="RuriLib.BotData.Proxy*"></a>
+  <h4 id="RuriLib_BotData_Proxy" data-uid="RuriLib.BotData.Proxy">Proxy</h4>
+  <div class="markdown level1 summary"><p>The proxy currently being used (null if none).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CProxy Proxy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_ResponseCode_" data-uid="RuriLib.BotData.ResponseCode*"></a>
+  <h4 id="RuriLib_BotData_ResponseCode" data-uid="RuriLib.BotData.ResponseCode">ResponseCode</h4>
+  <div class="markdown level1 summary"><p>The HTTP code of the HttpResponse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ResponseCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_ResponseHeaders_" data-uid="RuriLib.BotData.ResponseHeaders*"></a>
+  <h4 id="RuriLib_BotData_ResponseHeaders" data-uid="RuriLib.BotData.ResponseHeaders">ResponseHeaders</h4>
+  <div class="markdown level1 summary"><p>The dictionary of headers of the HttpResponse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; ResponseHeaders { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_ResponseSource_" data-uid="RuriLib.BotData.ResponseSource*"></a>
+  <h4 id="RuriLib_BotData_ResponseSource" data-uid="RuriLib.BotData.ResponseSource">ResponseSource</h4>
+  <div class="markdown level1 summary"><p>The source of the HttpResponse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ResponseSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_Screenshots_" data-uid="RuriLib.BotData.Screenshots*"></a>
+  <h4 id="RuriLib_BotData_Screenshots" data-uid="RuriLib.BotData.Screenshots">Screenshots</h4>
+  <div class="markdown level1 summary"><p>The paths of the Screenshots saved by selenium.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Screenshots { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_SSLStream_" data-uid="RuriLib.BotData.SSLStream*"></a>
+  <h4 id="RuriLib_BotData_SSLStream" data-uid="RuriLib.BotData.SSLStream">SSLStream</h4>
+  <div class="markdown level1 summary"><p>The SSL Stream used for TCP blocks with encrypted connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SslStream SSLStream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Security.SslStream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_Status_" data-uid="RuriLib.BotData.Status*"></a>
+  <h4 id="RuriLib_BotData_Status" data-uid="RuriLib.BotData.Status">Status</h4>
+  <div class="markdown level1 summary"><p>The Status of the Bot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BotStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BotStatus.html">BotStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_StatusString_" data-uid="RuriLib.BotData.StatusString*"></a>
+  <h4 id="RuriLib_BotData_StatusString" data-uid="RuriLib.BotData.StatusString">StatusString</h4>
+  <div class="markdown level1 summary"><p>The Status of the Bot as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StatusString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_TCPClient_" data-uid="RuriLib.BotData.TCPClient*"></a>
+  <h4 id="RuriLib_BotData_TCPClient" data-uid="RuriLib.BotData.TCPClient">TCPClient</h4>
+  <div class="markdown level1 summary"><p>The TCP Client used for TCP blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TcpClient TCPClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Sockets.TcpClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_UseProxies_" data-uid="RuriLib.BotData.UseProxies*"></a>
+  <h4 id="RuriLib_BotData_UseProxies" data-uid="RuriLib.BotData.UseProxies">UseProxies</h4>
+  <div class="markdown level1 summary"><p>Whether we should use proxies or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseProxies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_Variables_" data-uid="RuriLib.BotData.Variables*"></a>
+  <h4 id="RuriLib_BotData_Variables" data-uid="RuriLib.BotData.Variables">Variables</h4>
+  <div class="markdown level1 summary"><p>The local variables of the Bot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableList Variables { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.VariableList.html">VariableList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_BotData_Log_" data-uid="RuriLib.BotData.Log*"></a>
+  <h4 id="RuriLib_BotData_Log_RuriLib_LogEntry_" data-uid="RuriLib.BotData.Log(RuriLib.LogEntry)">Log(LogEntry)</h4>
+  <div class="markdown level1 summary"><p>Adds a new LogEntry to the LogBuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(LogEntry entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.LogEntry.html">LogEntry</a></td>
+        <td><span class="parametername">entry</span></td>
+        <td><p>The LogEntry to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BotData_LogNewLine_" data-uid="RuriLib.BotData.LogNewLine*"></a>
+  <h4 id="RuriLib_BotData_LogNewLine" data-uid="RuriLib.BotData.LogNewLine">LogNewLine()</h4>
+  <div class="markdown level1 summary"><p>Logs an empty line to the LogBuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogNewLine()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_BotData_LogRange_" data-uid="RuriLib.BotData.LogRange*"></a>
+  <h4 id="RuriLib_BotData_LogRange_System_Collections_Generic_List_RuriLib_LogEntry__" data-uid="RuriLib.BotData.LogRange(System.Collections.Generic.List{RuriLib.LogEntry})">LogRange(List&lt;LogEntry&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds multiple new LogEntry objects to the LogBuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogRange(List&lt;LogEntry&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.LogEntry.html">LogEntry</a>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The list of log entries to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

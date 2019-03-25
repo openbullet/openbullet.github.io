@@ -1,0 +1,1935 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RunnerViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RunnerViewModel
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.Runner.RunnerViewModel">
+  
+  
+  <h1 id="RuriLib_Runner_RunnerViewModel" data-uid="RuriLib.Runner.RunnerViewModel" class="text-break">Class RunnerViewModel
+  </h1>
+  <div class="markdown level0 summary"><p>Main class that handles all the multi-threaded checking of a Wordlist given a Config.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="RuriLib.ViewModels.ViewModelBase.html">ViewModelBase</a></div>
+    <div class="level2"><span class="xref">RunnerViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RuriLib.ViewModels.ViewModelBase.html#RuriLib_ViewModels_ViewModelBase_PropertyChanged">ViewModelBase.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.ViewModels.ViewModelBase.html#RuriLib_ViewModels_ViewModelBase_OnPropertyChanged_System_String_">ViewModelBase.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.Runner.html">RuriLib.Runner</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_Runner_RunnerViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RunnerViewModel : ViewModelBase, INotifyPropertyChanged, IRunnerMessaging</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel__ctor_" data-uid="RuriLib.Runner.RunnerViewModel.#ctor*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel__ctor_RuriLib_Models_EnvironmentSettings_RuriLib_ViewModels_RLSettingsViewModel_" data-uid="RuriLib.Runner.RunnerViewModel.#ctor(RuriLib.Models.EnvironmentSettings,RuriLib.ViewModels.RLSettingsViewModel)">RunnerViewModel(EnvironmentSettings, RLSettingsViewModel)</h4>
+  <div class="markdown level1 summary"><p>Constructs the RunnerViewModel instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RunnerViewModel(EnvironmentSettings environment, RLSettingsViewModel settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.EnvironmentSettings.html">EnvironmentSettings</a></td>
+        <td><span class="parametername">environment</span></td>
+        <td><p>The environment settings</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RuriLib.ViewModels.RLSettingsViewModel.html">RLSettingsViewModel</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>The RuriLib settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_AliveProxiesCount_" data-uid="RuriLib.Runner.RunnerViewModel.AliveProxiesCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_AliveProxiesCount" data-uid="RuriLib.Runner.RunnerViewModel.AliveProxiesCount">AliveProxiesCount</h4>
+  <div class="markdown level1 summary"><p>The amount of proxies loaded that are alive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AliveProxiesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_AvailableProxiesCount_" data-uid="RuriLib.Runner.RunnerViewModel.AvailableProxiesCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_AvailableProxiesCount" data-uid="RuriLib.Runner.RunnerViewModel.AvailableProxiesCount">AvailableProxiesCount</h4>
+  <div class="markdown level1 summary"><p>The amount of proxies loaded that are available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AvailableProxiesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_BadProxiesCount_" data-uid="RuriLib.Runner.RunnerViewModel.BadProxiesCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_BadProxiesCount" data-uid="RuriLib.Runner.RunnerViewModel.BadProxiesCount">BadProxiesCount</h4>
+  <div class="markdown level1 summary"><p>The amount of proxies loaded that are bad.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BadProxiesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Balance_" data-uid="RuriLib.Runner.RunnerViewModel.Balance*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Balance" data-uid="RuriLib.Runner.RunnerViewModel.Balance">Balance</h4>
+  <div class="markdown level1 summary"><p>The remaining balance in the captcha solver account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Balance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_BalanceString_" data-uid="RuriLib.Runner.RunnerViewModel.BalanceString*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_BalanceString" data-uid="RuriLib.Runner.RunnerViewModel.BalanceString">BalanceString</h4>
+  <div class="markdown level1 summary"><p>The remaining balance in the captcha solver account preceeded by a $ sign.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BalanceString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_BannedProxiesCount_" data-uid="RuriLib.Runner.RunnerViewModel.BannedProxiesCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_BannedProxiesCount" data-uid="RuriLib.Runner.RunnerViewModel.BannedProxiesCount">BannedProxiesCount</h4>
+  <div class="markdown level1 summary"><p>The amount of proxies loaded that are banned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BannedProxiesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Bots_" data-uid="RuriLib.Runner.RunnerViewModel.Bots*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Bots" data-uid="RuriLib.Runner.RunnerViewModel.Bots">Bots</h4>
+  <div class="markdown level1 summary"><p>The managed workers that run single data checks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;RunnerBotViewModel&gt; Bots { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="RuriLib.Runner.RunnerBotViewModel.html">RunnerBotViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_BotsNumber_" data-uid="RuriLib.Runner.RunnerViewModel.BotsNumber*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_BotsNumber" data-uid="RuriLib.Runner.RunnerViewModel.BotsNumber">BotsNumber</h4>
+  <div class="markdown level1 summary"><p>The amount of bots to run simultaneously for multi-threaded checking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BotsNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Busy_" data-uid="RuriLib.Runner.RunnerViewModel.Busy*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Busy" data-uid="RuriLib.Runner.RunnerViewModel.Busy">Busy</h4>
+  <div class="markdown level1 summary"><p>Whether the Master Worker is busy or idle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Busy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Config_" data-uid="RuriLib.Runner.RunnerViewModel.Config*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Config" data-uid="RuriLib.Runner.RunnerViewModel.Config">Config</h4>
+  <div class="markdown level1 summary"><p>The loaded Config to use for the check.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Config Config { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Config.html">Config</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ConfigName_" data-uid="RuriLib.Runner.RunnerViewModel.ConfigName*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ConfigName" data-uid="RuriLib.Runner.RunnerViewModel.ConfigName">ConfigName</h4>
+  <div class="markdown level1 summary"><p>The name of the loaded Config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConfigName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ControlsEnabled_" data-uid="RuriLib.Runner.RunnerViewModel.ControlsEnabled*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ControlsEnabled" data-uid="RuriLib.Runner.RunnerViewModel.ControlsEnabled">ControlsEnabled</h4>
+  <div class="markdown level1 summary"><p>Whether the user can set the properties (a.k.a. whether the Master Worker is idle).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ControlsEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_CPM_" data-uid="RuriLib.Runner.RunnerViewModel.CPM*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_CPM" data-uid="RuriLib.Runner.RunnerViewModel.CPM">CPM</h4>
+  <div class="markdown level1 summary"><p>The checks per minute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CPM { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_CustomCount_" data-uid="RuriLib.Runner.RunnerViewModel.CustomCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_CustomCount" data-uid="RuriLib.Runner.RunnerViewModel.CustomCount">CustomCount</h4>
+  <div class="markdown level1 summary"><p>Amount of data lines checked with a CUSTOM outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CustomCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_CustomInputs_" data-uid="RuriLib.Runner.RunnerViewModel.CustomInputs*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_CustomInputs" data-uid="RuriLib.Runner.RunnerViewModel.CustomInputs">CustomInputs</h4>
+  <div class="markdown level1 summary"><p>The pairs of (variable name, value) set by the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;KeyValuePair&lt;string, string&gt;&gt; CustomInputs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_CustomInputsInitialized_" data-uid="RuriLib.Runner.RunnerViewModel.CustomInputsInitialized*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_CustomInputsInitialized" data-uid="RuriLib.Runner.RunnerViewModel.CustomInputsInitialized">CustomInputsInitialized</h4>
+  <div class="markdown level1 summary"><p>Whether the Custom Inputs have already been initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CustomInputsInitialized { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_CustomList_" data-uid="RuriLib.Runner.RunnerViewModel.CustomList*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_CustomList" data-uid="RuriLib.Runner.RunnerViewModel.CustomList">CustomList</h4>
+  <div class="markdown level1 summary"><p>The list of data lines checked with a CUSTOM outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;ValidData&gt; CustomList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="RuriLib.Models.ValidData.html">ValidData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_DataPool_" data-uid="RuriLib.Runner.RunnerViewModel.DataPool*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_DataPool" data-uid="RuriLib.Runner.RunnerViewModel.DataPool">DataPool</h4>
+  <div class="markdown level1 summary"><p>The pool from which the Master worker draws data to assign to bots for the checks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataPool DataPool { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.DataPool.html">DataPool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_DataSize_" data-uid="RuriLib.Runner.RunnerViewModel.DataSize*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_DataSize" data-uid="RuriLib.Runner.RunnerViewModel.DataSize">DataSize</h4>
+  <div class="markdown level1 summary"><p>The size of the DataPool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DataSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_EmptyList_" data-uid="RuriLib.Runner.RunnerViewModel.EmptyList*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_EmptyList" data-uid="RuriLib.Runner.RunnerViewModel.EmptyList">EmptyList</h4>
+  <div class="markdown level1 summary"><p>Auxiliary empty list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;ValidData&gt; EmptyList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="RuriLib.Models.ValidData.html">ValidData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_FailCount_" data-uid="RuriLib.Runner.RunnerViewModel.FailCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_FailCount" data-uid="RuriLib.Runner.RunnerViewModel.FailCount">FailCount</h4>
+  <div class="markdown level1 summary"><p>Amount of data lines checked with a FAIL outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FailCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_FailedList_" data-uid="RuriLib.Runner.RunnerViewModel.FailedList*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_FailedList" data-uid="RuriLib.Runner.RunnerViewModel.FailedList">FailedList</h4>
+  <div class="markdown level1 summary"><p>The list of data lines checked with a FAIL outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ValidData&gt; FailedList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.ValidData.html">ValidData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_GlobalCookies_" data-uid="RuriLib.Runner.RunnerViewModel.GlobalCookies*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_GlobalCookies" data-uid="RuriLib.Runner.RunnerViewModel.GlobalCookies">GlobalCookies</h4>
+  <div class="markdown level1 summary"><p>The Global Cookies list that are set in all bots when they start.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CookieDictionary GlobalCookies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Extreme.Net.CookieDictionary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_GlobalVariables_" data-uid="RuriLib.Runner.RunnerViewModel.GlobalVariables*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_GlobalVariables" data-uid="RuriLib.Runner.RunnerViewModel.GlobalVariables">GlobalVariables</h4>
+  <div class="markdown level1 summary"><p>The Global Variables list that are set in all bots when they start.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableList GlobalVariables { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.VariableList.html">VariableList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_HitCount_" data-uid="RuriLib.Runner.RunnerViewModel.HitCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_HitCount" data-uid="RuriLib.Runner.RunnerViewModel.HitCount">HitCount</h4>
+  <div class="markdown level1 summary"><p>Amount of data lines checked with a SUCCESS outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HitCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_HitsList_" data-uid="RuriLib.Runner.RunnerViewModel.HitsList*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_HitsList" data-uid="RuriLib.Runner.RunnerViewModel.HitsList">HitsList</h4>
+  <div class="markdown level1 summary"><p>The list of data lines checked with a SUCCESS outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;ValidData&gt; HitsList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="RuriLib.Models.ValidData.html">ValidData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Master_" data-uid="RuriLib.Runner.RunnerViewModel.Master*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Master" data-uid="RuriLib.Runner.RunnerViewModel.Master">Master</h4>
+  <div class="markdown level1 summary"><p>The Master Worker that manages all the other Workers and updates the observable properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbortableBackgroundWorker Master { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Runner.AbortableBackgroundWorker.html">AbortableBackgroundWorker</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Progress_" data-uid="RuriLib.Runner.RunnerViewModel.Progress*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Progress" data-uid="RuriLib.Runner.RunnerViewModel.Progress">Progress</h4>
+  <div class="markdown level1 summary"><p>The rounded percentage of checked data lines (0 to 100).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Progress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ProgressCount_" data-uid="RuriLib.Runner.RunnerViewModel.ProgressCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ProgressCount" data-uid="RuriLib.Runner.RunnerViewModel.ProgressCount">ProgressCount</h4>
+  <div class="markdown level1 summary"><p>The amount of data lines checked, including the starting point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ProgressCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ProxyMode_" data-uid="RuriLib.Runner.RunnerViewModel.ProxyMode*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ProxyMode" data-uid="RuriLib.Runner.RunnerViewModel.ProxyMode">ProxyMode</h4>
+  <div class="markdown level1 summary"><p>The Proxy Mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProxyMode ProxyMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Runner.ProxyMode.html">ProxyMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ProxyPool_" data-uid="RuriLib.Runner.RunnerViewModel.ProxyPool*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ProxyPool" data-uid="RuriLib.Runner.RunnerViewModel.ProxyPool">ProxyPool</h4>
+  <div class="markdown level1 summary"><p>The pool from which bots can get a proxy upon request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProxyPool ProxyPool { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.ProxyPool.html">ProxyPool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ResultsFilter_" data-uid="RuriLib.Runner.RunnerViewModel.ResultsFilter*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ResultsFilter" data-uid="RuriLib.Runner.RunnerViewModel.ResultsFilter">ResultsFilter</h4>
+  <div class="markdown level1 summary"><p>Filter based on the Bot Status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BotStatus ResultsFilter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BotStatus.html">BotStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_RetryCount_" data-uid="RuriLib.Runner.RunnerViewModel.RetryCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_RetryCount" data-uid="RuriLib.Runner.RunnerViewModel.RetryCount">RetryCount</h4>
+  <div class="markdown level1 summary"><p>Amount of data lines retried due to a BAN, RETRY or ERROR outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RetryCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_StartingPoint_" data-uid="RuriLib.Runner.RunnerViewModel.StartingPoint*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_StartingPoint" data-uid="RuriLib.Runner.RunnerViewModel.StartingPoint">StartingPoint</h4>
+  <div class="markdown level1 summary"><p>How many data lines to skip before starting the checking process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StartingPoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_TestedCount_" data-uid="RuriLib.Runner.RunnerViewModel.TestedCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_TestedCount" data-uid="RuriLib.Runner.RunnerViewModel.TestedCount">TestedCount</h4>
+  <div class="markdown level1 summary"><p>Total amount of successfully tested data lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TestedCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_TimeLeft_" data-uid="RuriLib.Runner.RunnerViewModel.TimeLeft*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_TimeLeft" data-uid="RuriLib.Runner.RunnerViewModel.TimeLeft">TimeLeft</h4>
+  <div class="markdown level1 summary"><p>Representation of the expected time left to check the remaining data lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TimeLeft { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_TimerDays_" data-uid="RuriLib.Runner.RunnerViewModel.TimerDays*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_TimerDays" data-uid="RuriLib.Runner.RunnerViewModel.TimerDays">TimerDays</h4>
+  <div class="markdown level1 summary"><p>Days elapsed since the runner was started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TimerDays { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_TimerHours_" data-uid="RuriLib.Runner.RunnerViewModel.TimerHours*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_TimerHours" data-uid="RuriLib.Runner.RunnerViewModel.TimerHours">TimerHours</h4>
+  <div class="markdown level1 summary"><p>Hours elapsed since the runner was started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TimerHours { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_TimerMinutes_" data-uid="RuriLib.Runner.RunnerViewModel.TimerMinutes*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_TimerMinutes" data-uid="RuriLib.Runner.RunnerViewModel.TimerMinutes">TimerMinutes</h4>
+  <div class="markdown level1 summary"><p>Minutes elapsed since the runner was started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TimerMinutes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_TimerSeconds_" data-uid="RuriLib.Runner.RunnerViewModel.TimerSeconds*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_TimerSeconds" data-uid="RuriLib.Runner.RunnerViewModel.TimerSeconds">TimerSeconds</h4>
+  <div class="markdown level1 summary"><p>Seconds elapsed since the runner was started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TimerSeconds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ToCheckCount_" data-uid="RuriLib.Runner.RunnerViewModel.ToCheckCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ToCheckCount" data-uid="RuriLib.Runner.RunnerViewModel.ToCheckCount">ToCheckCount</h4>
+  <div class="markdown level1 summary"><p>Amount of data lines checked with a NONE outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ToCheckCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ToCheckList_" data-uid="RuriLib.Runner.RunnerViewModel.ToCheckList*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ToCheckList" data-uid="RuriLib.Runner.RunnerViewModel.ToCheckList">ToCheckList</h4>
+  <div class="markdown level1 summary"><p>The list of data lines checked with a NONE outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;ValidData&gt; ToCheckList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="RuriLib.Models.ValidData.html">ValidData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_TotalProxiesCount_" data-uid="RuriLib.Runner.RunnerViewModel.TotalProxiesCount*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_TotalProxiesCount" data-uid="RuriLib.Runner.RunnerViewModel.TotalProxiesCount">TotalProxiesCount</h4>
+  <div class="markdown level1 summary"><p>The total amount of proxies loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalProxiesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_UseProxies_" data-uid="RuriLib.Runner.RunnerViewModel.UseProxies*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_UseProxies" data-uid="RuriLib.Runner.RunnerViewModel.UseProxies">UseProxies</h4>
+  <div class="markdown level1 summary"><p>Whether proxies can be used for the current session given the Proxy Mode and the Config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseProxies { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Wordlist_" data-uid="RuriLib.Runner.RunnerViewModel.Wordlist*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Wordlist" data-uid="RuriLib.Runner.RunnerViewModel.Wordlist">Wordlist</h4>
+  <div class="markdown level1 summary"><p>The loaded Wordlist to use for the check.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Wordlist Wordlist { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.Wordlist.html">Wordlist</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_WordlistName_" data-uid="RuriLib.Runner.RunnerViewModel.WordlistName*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_WordlistName" data-uid="RuriLib.Runner.RunnerViewModel.WordlistName">WordlistName</h4>
+  <div class="markdown level1 summary"><p>The name of the loaded Wordlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WordlistName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_WordlistSize_" data-uid="RuriLib.Runner.RunnerViewModel.WordlistSize*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_WordlistSize" data-uid="RuriLib.Runner.RunnerViewModel.WordlistSize">WordlistSize</h4>
+  <div class="markdown level1 summary"><p>The size of the loaded Wordlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WordlistSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_WorkerStatus_" data-uid="RuriLib.Runner.RunnerViewModel.WorkerStatus*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_WorkerStatus" data-uid="RuriLib.Runner.RunnerViewModel.WorkerStatus">WorkerStatus</h4>
+  <div class="markdown level1 summary"><p>The status of the Master Worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorkerStatus WorkerStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Runner.WorkerStatus.html">WorkerStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Clamp_" data-uid="RuriLib.Runner.RunnerViewModel.Clamp*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Clamp_System_Int32_System_Int32_System_Int32_" data-uid="RuriLib.Runner.RunnerViewModel.Clamp(System.Int32,System.Int32,System.Int32)">Clamp(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Clamps an integer to an interval of values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Clamp(int a, int min, int max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The integer to clamp</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value of the interval</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value of the interval</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The clamped integer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_ForceStop_" data-uid="RuriLib.Runner.RunnerViewModel.ForceStop*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_ForceStop" data-uid="RuriLib.Runner.RunnerViewModel.ForceStop">ForceStop()</h4>
+  <div class="markdown level1 summary"><p>Forcefully aborts the Bots and stops the Master Worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceStop()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_GetProxiesFromAPI_" data-uid="RuriLib.Runner.RunnerViewModel.GetProxiesFromAPI*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_GetProxiesFromAPI_System_String_Extreme_Net_ProxyType_System_Boolean_" data-uid="RuriLib.Runner.RunnerViewModel.GetProxiesFromAPI(System.String,Extreme.Net.ProxyType,System.Boolean)">GetProxiesFromAPI(String, ProxyType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a list of proxies from an API endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;CProxy&gt; GetProxiesFromAPI(string url, ProxyType type, bool useRegex = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL of the API call</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Extreme.Net.ProxyType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the proxies</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useRegex</span></td>
+        <td><p>Whether to use an IP:PORT regex to extract the proxies from the lines</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td><p>The list of CProxy objects loaded from the API</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_GetProxiesFromFile_" data-uid="RuriLib.Runner.RunnerViewModel.GetProxiesFromFile*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_GetProxiesFromFile_System_String_Extreme_Net_ProxyType_System_Boolean_" data-uid="RuriLib.Runner.RunnerViewModel.GetProxiesFromFile(System.String,Extreme.Net.ProxyType,System.Boolean)">GetProxiesFromFile(String, ProxyType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a list of proxies from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;CProxy&gt; GetProxiesFromFile(string fileName, ProxyType type, bool useRegex = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file containing the proxies, one per line</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Extreme.Net.ProxyType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the proxies</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useRegex</span></td>
+        <td><p>Whether to use an IP:PORT regex to extract the proxies from the lines</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td><p>The list of CProxy objects loaded from the file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_SetConfig_" data-uid="RuriLib.Runner.RunnerViewModel.SetConfig*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_SetConfig_RuriLib_Config_System_Boolean_" data-uid="RuriLib.Runner.RunnerViewModel.SetConfig(RuriLib.Config,System.Boolean)">SetConfig(Config, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets a Config in the Runner instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConfig(Config config, bool setRecommended)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Config.html">Config</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The Config to be used for the check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">setRecommended</span></td>
+        <td><p>Whether to automatically set the recommended amount of bots from the Config settings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_SetWordlist_" data-uid="RuriLib.Runner.RunnerViewModel.SetWordlist*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_SetWordlist_RuriLib_Models_Wordlist_" data-uid="RuriLib.Runner.RunnerViewModel.SetWordlist(RuriLib.Models.Wordlist)">SetWordlist(Wordlist)</h4>
+  <div class="markdown level1 summary"><p>Sets a Wordlist in the Runner instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWordlist(Wordlist wordlist)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.Wordlist.html">Wordlist</a></td>
+        <td><span class="parametername">wordlist</span></td>
+        <td><p>The Wordlist to be used for the check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Start_" data-uid="RuriLib.Runner.RunnerViewModel.Start*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Start" data-uid="RuriLib.Runner.RunnerViewModel.Start">Start()</h4>
+  <div class="markdown level1 summary"><p>Starts the Master Worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_Stop_" data-uid="RuriLib.Runner.RunnerViewModel.Stop*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_Stop" data-uid="RuriLib.Runner.RunnerViewModel.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stops the Master Worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_UpdateCPM_" data-uid="RuriLib.Runner.RunnerViewModel.UpdateCPM*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_UpdateCPM" data-uid="RuriLib.Runner.RunnerViewModel.UpdateCPM">UpdateCPM()</h4>
+  <div class="markdown level1 summary"><p>Update the observable CPM property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCPM()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_UpdateStats_" data-uid="RuriLib.Runner.RunnerViewModel.UpdateStats*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_UpdateStats" data-uid="RuriLib.Runner.RunnerViewModel.UpdateStats">UpdateStats()</h4>
+  <div class="markdown level1 summary"><p>Update the observable properties for the statistics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateStats()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_Runner_RunnerViewModel_UpdateTimer_" data-uid="RuriLib.Runner.RunnerViewModel.UpdateTimer*"></a>
+  <h4 id="RuriLib_Runner_RunnerViewModel_UpdateTimer" data-uid="RuriLib.Runner.RunnerViewModel.UpdateTimer">UpdateTimer()</h4>
+  <div class="markdown level1 summary"><p>Update the observable properties for the Timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTimer()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="RuriLib_Runner_RunnerViewModel_AskCustomInputs" data-uid="RuriLib.Runner.RunnerViewModel.AskCustomInputs">AskCustomInputs</h4>
+  <div class="markdown level1 summary"><p>Fired when custom inputs from the user are required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IRunnerMessaging&gt; AskCustomInputs</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RuriLib_Runner_RunnerViewModel_DispatchAction" data-uid="RuriLib.Runner.RunnerViewModel.DispatchAction">DispatchAction</h4>
+  <div class="markdown level1 summary"><p>Fired when an Action could change the UI and needs to be dispatched to another thread (usually it&apos;s handled by the UI thread).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IRunnerMessaging, Action&gt; DispatchAction</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a>, <span class="xref">System.Action</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RuriLib_Runner_RunnerViewModel_FoundHit" data-uid="RuriLib.Runner.RunnerViewModel.FoundHit">FoundHit</h4>
+  <div class="markdown level1 summary"><p>Fired when a Hit was found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IRunnerMessaging, Hit&gt; FoundHit</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a>, <a class="xref" href="RuriLib.Models.Hit.html">Hit</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RuriLib_Runner_RunnerViewModel_MessageArrived" data-uid="RuriLib.Runner.RunnerViewModel.MessageArrived">MessageArrived</h4>
+  <div class="markdown level1 summary"><p>Fired when a new message needs to be logged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IRunnerMessaging, LogLevel, string, bool&gt; MessageArrived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a>, <a class="xref" href="RuriLib.LogLevel.html">LogLevel</a>, <span class="xref">System.String</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RuriLib_Runner_RunnerViewModel_ReloadProxies" data-uid="RuriLib.Runner.RunnerViewModel.ReloadProxies">ReloadProxies</h4>
+  <div class="markdown level1 summary"><p>Fired when proxies need to be reloaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IRunnerMessaging&gt; ReloadProxies</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RuriLib_Runner_RunnerViewModel_SaveProgress" data-uid="RuriLib.Runner.RunnerViewModel.SaveProgress">SaveProgress</h4>
+  <div class="markdown level1 summary"><p>Fired when the progress record needs to be saved to the Database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IRunnerMessaging&gt; SaveProgress</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RuriLib_Runner_RunnerViewModel_WorkerStatusChanged" data-uid="RuriLib.Runner.RunnerViewModel.WorkerStatusChanged">WorkerStatusChanged</h4>
+  <div class="markdown level1 summary"><p>Fired when the Master Worker status changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IRunnerMessaging&gt; WorkerStatusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <a class="xref" href="RuriLib.Runner.IRunnerMessaging.html">IRunnerMessaging</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,953 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlockRequest
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlockRequest
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.BlockRequest">
+  
+  
+  <h1 id="RuriLib_BlockRequest" data-uid="RuriLib.BlockRequest" class="text-break">Class BlockRequest
+  </h1>
+  <div class="markdown level0 summary"><p>A block that can perform HTTP requests.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="RuriLib.ViewModels.ViewModelBase.html">ViewModelBase</a></div>
+    <div class="level2"><a class="xref" href="RuriLib.BlockBase.html">BlockBase</a></div>
+    <div class="level3"><span class="xref">BlockRequest</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_Label">BlockBase.Label</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_Disabled">BlockBase.Disabled</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_IsSelenium">BlockBase.IsSelenium</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_IsCaptcha">BlockBase.IsCaptcha</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_FromLS_System_Collections_Generic_List_System_String__">BlockBase.FromLS(List&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_ReplaceValuesRecursive_System_String_RuriLib_BotData_">BlockBase.ReplaceValuesRecursive(String, BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_ReplaceValues_System_String_RuriLib_BotData_">BlockBase.ReplaceValues(String, BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_ParseArguments_System_String_System_Char_System_Char_">BlockBase.ParseArguments(String, Char, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_UpdateSeleniumData_RuriLib_BotData_">BlockBase.UpdateSeleniumData(BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_InsertVariables_RuriLib_BotData_System_Boolean_System_Boolean_System_Collections_Generic_List_System_String__System_String_System_String_System_String_">BlockBase.InsertVariables(BotData, Boolean, Boolean, List&lt;String&gt;, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_SaveScreenshot_OpenQA_Selenium_Screenshot_RuriLib_BotData_">BlockBase.SaveScreenshot(Screenshot, BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_SaveScreenshot_System_Drawing_Bitmap_RuriLib_BotData_">BlockBase.SaveScreenshot(Bitmap, BotData)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_GetFirstAvailableFileName_System_String_System_String_System_String_">BlockBase.GetFirstAvailableFileName(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_MakeValidFileName_System_String_System_Boolean_">BlockBase.MakeValidFileName(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_TruncatePretty_System_String_System_Int32_">BlockBase.TruncatePretty(String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.ViewModels.ViewModelBase.html#RuriLib_ViewModels_ViewModelBase_PropertyChanged">ViewModelBase.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="RuriLib.ViewModels.ViewModelBase.html#RuriLib_ViewModels_ViewModelBase_OnPropertyChanged_System_String_">ViewModelBase.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.html">RuriLib</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_BlockRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BlockRequest : BlockBase, INotifyPropertyChanged</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RuriLib_BlockRequest__ctor_" data-uid="RuriLib.BlockRequest.#ctor*"></a>
+  <h4 id="RuriLib_BlockRequest__ctor" data-uid="RuriLib.BlockRequest.#ctor">BlockRequest()</h4>
+  <div class="markdown level1 summary"><p>Creates a Request block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockRequest()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RuriLib_BlockRequest_AuthPass_" data-uid="RuriLib.BlockRequest.AuthPass*"></a>
+  <h4 id="RuriLib_BlockRequest_AuthPass" data-uid="RuriLib.BlockRequest.AuthPass">AuthPass</h4>
+  <div class="markdown level1 summary"><p>The password for basic auth requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AuthPass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_AuthUser_" data-uid="RuriLib.BlockRequest.AuthUser*"></a>
+  <h4 id="RuriLib_BlockRequest_AuthUser" data-uid="RuriLib.BlockRequest.AuthUser">AuthUser</h4>
+  <div class="markdown level1 summary"><p>The username for basic auth requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AuthUser { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_AutoRedirect_" data-uid="RuriLib.BlockRequest.AutoRedirect*"></a>
+  <h4 id="RuriLib_BlockRequest_AutoRedirect" data-uid="RuriLib.BlockRequest.AutoRedirect">AutoRedirect</h4>
+  <div class="markdown level1 summary"><p>Whether to perform automatic redirection in the case of 3xx headers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoRedirect { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_ContentType_" data-uid="RuriLib.BlockRequest.ContentType*"></a>
+  <h4 id="RuriLib_BlockRequest_ContentType" data-uid="RuriLib.BlockRequest.ContentType">ContentType</h4>
+  <div class="markdown level1 summary"><p>The type of content the server should expect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_CustomCookies_" data-uid="RuriLib.BlockRequest.CustomCookies*"></a>
+  <h4 id="RuriLib_BlockRequest_CustomCookies" data-uid="RuriLib.BlockRequest.CustomCookies">CustomCookies</h4>
+  <div class="markdown level1 summary"><p>The custom cookies that are sent in the HTTP request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; CustomCookies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_CustomHeaders_" data-uid="RuriLib.BlockRequest.CustomHeaders*"></a>
+  <h4 id="RuriLib_BlockRequest_CustomHeaders" data-uid="RuriLib.BlockRequest.CustomHeaders">CustomHeaders</h4>
+  <div class="markdown level1 summary"><p>The custom headers that are sent in the HTTP request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; CustomHeaders { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_DownloadPath_" data-uid="RuriLib.BlockRequest.DownloadPath*"></a>
+  <h4 id="RuriLib_BlockRequest_DownloadPath" data-uid="RuriLib.BlockRequest.DownloadPath">DownloadPath</h4>
+  <div class="markdown level1 summary"><p>The path of the file where a FILE response needs to be stored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DownloadPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_Method_" data-uid="RuriLib.BlockRequest.Method*"></a>
+  <h4 id="RuriLib_BlockRequest_Method" data-uid="RuriLib.BlockRequest.Method">Method</h4>
+  <div class="markdown level1 summary"><p>The method of the HTTP request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpMethod Method { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Extreme.Net.HttpMethod</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_MultipartBoundary_" data-uid="RuriLib.BlockRequest.MultipartBoundary*"></a>
+  <h4 id="RuriLib_BlockRequest_MultipartBoundary" data-uid="RuriLib.BlockRequest.MultipartBoundary">MultipartBoundary</h4>
+  <div class="markdown level1 summary"><p>The boundary that separates multipart contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MultipartBoundary { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_MultipartContents_" data-uid="RuriLib.BlockRequest.MultipartContents*"></a>
+  <h4 id="RuriLib_BlockRequest_MultipartContents" data-uid="RuriLib.BlockRequest.MultipartContents">MultipartContents</h4>
+  <div class="markdown level1 summary"><p>The list of contents to send in a multipart request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MultipartContent&gt; MultipartContents { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.MultipartContent.html">MultipartContent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_PostData_" data-uid="RuriLib.BlockRequest.PostData*"></a>
+  <h4 id="RuriLib_BlockRequest_PostData" data-uid="RuriLib.BlockRequest.PostData">PostData</h4>
+  <div class="markdown level1 summary"><p>The content of the request, sent after the headers. Use &apos;\n&apos; to input a linebreak.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PostData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_ReadResponseSource_" data-uid="RuriLib.BlockRequest.ReadResponseSource*"></a>
+  <h4 id="RuriLib_BlockRequest_ReadResponseSource" data-uid="RuriLib.BlockRequest.ReadResponseSource">ReadResponseSource</h4>
+  <div class="markdown level1 summary"><p>Whether to read the stream of data from the HTTP response. Set to false if only the headers are needed, in order to speed up the process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadResponseSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_RequestType_" data-uid="RuriLib.BlockRequest.RequestType*"></a>
+  <h4 id="RuriLib_BlockRequest_RequestType" data-uid="RuriLib.BlockRequest.RequestType">RequestType</h4>
+  <div class="markdown level1 summary"><p>The request type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestType RequestType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.RequestType.html">RequestType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_ResponseType_" data-uid="RuriLib.BlockRequest.ResponseType*"></a>
+  <h4 id="RuriLib_BlockRequest_ResponseType" data-uid="RuriLib.BlockRequest.ResponseType">ResponseType</h4>
+  <div class="markdown level1 summary"><p>The type of response expected from the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResponseType ResponseType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.ResponseType.html">ResponseType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_Url_" data-uid="RuriLib.BlockRequest.Url*"></a>
+  <h4 id="RuriLib_BlockRequest_Url" data-uid="RuriLib.BlockRequest.Url">Url</h4>
+  <div class="markdown level1 summary"><p>The URL to call, including additional GET query parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Url { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_BlockRequest_FromLS_" data-uid="RuriLib.BlockRequest.FromLS*"></a>
+  <h4 id="RuriLib_BlockRequest_FromLS_System_String_" data-uid="RuriLib.BlockRequest.FromLS(System.String)">FromLS(String)</h4>
+  <div class="markdown level1 summary"><p>Builds a block from a line of LoliScript code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override BlockBase FromLS(string line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>The line of LoliScript code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BlockBase.html">BlockBase</a></td>
+        <td><p>The parsed block object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_FromLS_System_String_">BlockBase.FromLS(String)</a></div>
+  
+  
+  <a id="RuriLib_BlockRequest_GetCustomCookies_" data-uid="RuriLib.BlockRequest.GetCustomCookies*"></a>
+  <h4 id="RuriLib_BlockRequest_GetCustomCookies" data-uid="RuriLib.BlockRequest.GetCustomCookies">GetCustomCookies()</h4>
+  <div class="markdown level1 summary"><p>Builds a string containing custom cookies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCustomCookies()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>One cookie per line, with name and value separated by a colon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_GetCustomHeaders_" data-uid="RuriLib.BlockRequest.GetCustomHeaders*"></a>
+  <h4 id="RuriLib_BlockRequest_GetCustomHeaders" data-uid="RuriLib.BlockRequest.GetCustomHeaders">GetCustomHeaders()</h4>
+  <div class="markdown level1 summary"><p>Builds a string containing custom headers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCustomHeaders()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>One header per line, with name and value separated by a colon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_GetMultipartContents_" data-uid="RuriLib.BlockRequest.GetMultipartContents*"></a>
+  <h4 id="RuriLib_BlockRequest_GetMultipartContents" data-uid="RuriLib.BlockRequest.GetMultipartContents">GetMultipartContents()</h4>
+  <div class="markdown level1 summary"><p>Builds a string containing multipart content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetMultipartContents()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>One content per line, with type, name and value separated by a colon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_ParsePair_" data-uid="RuriLib.BlockRequest.ParsePair*"></a>
+  <h4 id="RuriLib_BlockRequest_ParsePair_System_String_" data-uid="RuriLib.BlockRequest.ParsePair(System.String)">ParsePair(String)</h4>
+  <div class="markdown level1 summary"><p>Parses a pair of values separated by a colon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KeyValuePair&lt;string, string&gt; ParsePair(string pair)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pair</span></td>
+        <td><p>The string containing colon-separated values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><p>The pair of values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_Process_" data-uid="RuriLib.BlockRequest.Process*"></a>
+  <h4 id="RuriLib_BlockRequest_Process_RuriLib_BotData_" data-uid="RuriLib.BlockRequest.Process(RuriLib.BotData)">Process(BotData)</h4>
+  <div class="markdown level1 summary"><p>Executes the actual block logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Process(BotData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BotData.html">BotData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The BotData needed for variable replacement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_Process_RuriLib_BotData_">BlockBase.Process(BotData)</a></div>
+  
+  
+  <a id="RuriLib_BlockRequest_SetCustomCookies_" data-uid="RuriLib.BlockRequest.SetCustomCookies*"></a>
+  <h4 id="RuriLib_BlockRequest_SetCustomCookies_System_String___" data-uid="RuriLib.BlockRequest.SetCustomCookies(System.String[])">SetCustomCookies(String[])</h4>
+  <div class="markdown level1 summary"><p>Sets custom cookies from an array of lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomCookies(string[] lines)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">lines</span></td>
+        <td><p>The lines containing the colon-separated name and value of the cookies</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_SetCustomHeaders_" data-uid="RuriLib.BlockRequest.SetCustomHeaders*"></a>
+  <h4 id="RuriLib_BlockRequest_SetCustomHeaders_System_String___" data-uid="RuriLib.BlockRequest.SetCustomHeaders(System.String[])">SetCustomHeaders(String[])</h4>
+  <div class="markdown level1 summary"><p>Sets custom headers from an array of lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomHeaders(string[] lines)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">lines</span></td>
+        <td><p>The lines containing the colon-separated name and value of the headers</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_SetMultipartContents_" data-uid="RuriLib.BlockRequest.SetMultipartContents*"></a>
+  <h4 id="RuriLib_BlockRequest_SetMultipartContents_System_String___" data-uid="RuriLib.BlockRequest.SetMultipartContents(System.String[])">SetMultipartContents(String[])</h4>
+  <div class="markdown level1 summary"><p>Sets multipart contents from an array of lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMultipartContents(string[] lines)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">lines</span></td>
+        <td><p>The lines containing the colon-separated type, name and value of the multipart contents</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_BlockRequest_ToLS_" data-uid="RuriLib.BlockRequest.ToLS*"></a>
+  <h4 id="RuriLib_BlockRequest_ToLS_System_Boolean_" data-uid="RuriLib.BlockRequest.ToLS(System.Boolean)">ToLS(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Converts the block to LoliScript code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToLS(bool indent = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">indent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RuriLib.BlockBase.html#RuriLib_BlockBase_ToLS_System_Boolean_">BlockBase.ToLS(Boolean)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

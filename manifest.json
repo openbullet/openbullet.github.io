@@ -1,0 +1,1530 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/scarf/source/repos/OpenBullet/RuriLib",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "gis0Scf/C7+0NXeNl3AT/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "WkEvFo8+XrglLoOATU4aMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "d2J/vnLtYXUSXJOBDZrP3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockBase.html",
+          "hash": "qn+J5b5OwivHsY6TlHs3NA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockBypassCF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockBypassCF.html",
+          "hash": "ycOCcf2+xBCHUxglgmQ6ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockCaptcha.CaptchaService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockCaptcha.CaptchaService.html",
+          "hash": "Cp0Mpc2MaFuTjO38KYLKZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockCaptcha.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockCaptcha.html",
+          "hash": "5FD+9uPBgO/XCjFYFOV+jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockFunction.Function.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockFunction.Function.html",
+          "hash": "+iPySBkznXyioR5VK4HdAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockFunction.Hash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockFunction.Hash.html",
+          "hash": "omaI0sM629TntgpLkE2IZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockFunction.html",
+          "hash": "0qRZOCbhndtDweJHkCn7bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockImageCaptcha.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockImageCaptcha.html",
+          "hash": "3UzczAwLk6NwacwoWNCXrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockKeycheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockKeycheck.html",
+          "hash": "V/rd8NwSQ7IAgIuYiNxXJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockLSCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockLSCode.html",
+          "hash": "twx0+YkjRTmrYpmp8OxdUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockParse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockParse.html",
+          "hash": "EtHAiRLRg7GYqV+KLCgiwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockRecaptcha.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockRecaptcha.html",
+          "hash": "49otviaRO8oVQE/zfQ9lIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockRequest.html",
+          "hash": "OO5qDx+TwXAiHMVETL2Etg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockTCP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockTCP.html",
+          "hash": "wsSR3EVLCzqszj0C+Xd4xA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BlockUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BlockUtility.html",
+          "hash": "S/AQ89uK4iXkohvLV0hYFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BotData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BotData.html",
+          "hash": "a/iDSmfKVEGDsIUuqVPd5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BotStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BotStatus.html",
+          "hash": "/93PehoV81HYlfDbd5KKbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.BrowserAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.BrowserAction.html",
+          "hash": "dmYK8wcr7xi/FGOPSjACDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.AZCaptcha.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.AZCaptcha.html",
+          "hash": "SHLsabfiRzlgBzgulWMvnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.AntiCaptcha.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.AntiCaptcha.html",
+          "hash": "rIvXmOSG+n2g7ir04Vz94g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.CWebClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.CWebClient.html",
+          "hash": "Ac6lluAXiCRInJL8lgLqkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.CaptchaService.CaptchaStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.CaptchaService.CaptchaStatus.html",
+          "hash": "FIagXjQfI1tF4AbJ3Y5fNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.CaptchaService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.CaptchaService.html",
+          "hash": "2QzN9Rlukr1/SgeShPUIBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.CaptchasIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.CaptchasIO.html",
+          "hash": "uNEGyZkw/xYlFUyMYrE7mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.DeCaptcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.DeCaptcher.html",
+          "hash": "avW2c2wcn8OZO+C5okAdHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.DeathByCaptcha.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.DeathByCaptcha.html",
+          "hash": "TIzxQVy1ysAtL6ixYzqb2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.ImageTyperz.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.ImageTyperz.html",
+          "hash": "wBFWgDBc1Azh+1aRfOk/1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.SolveReCaptcha.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.SolveReCaptcha.html",
+          "hash": "TSIUW7vll+Mfgbm44AoLbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.TwoCaptcha.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.TwoCaptcha.html",
+          "hash": "IxfUzDRVhE8fkfgKTzd20w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.CaptchaServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.CaptchaServices.html",
+          "hash": "aVCnxpW7wSEt3KyVNz21gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Cloudflare.ChallengeSolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Cloudflare.ChallengeSolution.html",
+          "hash": "PYvqbeTqCxOUQAmBlXkgCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Cloudflare.ChallengeSolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Cloudflare.ChallengeSolver.html",
+          "hash": "SIPgm33yO6ACE68OIr4ONQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Cloudflare.CloudflareBypass.DLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Cloudflare.CloudflareBypass.DLog.html",
+          "hash": "U5fdDqhYY0JV74jF8gU1sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Cloudflare.CloudflareBypass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Cloudflare.CloudflareBypass.html",
+          "hash": "a5Iwe6CwA9NcXWNImJVIxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Cloudflare.CloudflareException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Cloudflare.CloudflareException.html",
+          "hash": "PeEMa2/nnZXAEjUgS88fxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Cloudflare.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Cloudflare.html",
+          "hash": "R84OD8x3gVy0rX7bsClURA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Condition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Condition.html",
+          "hash": "+OyBFF/5NGwydyjzaD1p5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ConditionChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ConditionChecker.html",
+          "hash": "l3JhPiFaVAbJDZhp3hzILw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Config.html",
+          "hash": "wBiW4wRbiXPaD5Z6AX7O4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ConfigSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ConfigSettings.html",
+          "hash": "Bxe959BraVNDbHMbkruSWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Conversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Conversion.html",
+          "hash": "qzhsOrTBPdK9JjVwCyjOMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ElementAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ElementAction.html",
+          "hash": "EmPxfgco08I3AVeeFlZnCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ElementLocator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ElementLocator.html",
+          "hash": "Tvm6z/heuJ9t7DWQnZ6xZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.FileAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.FileAction.html",
+          "hash": "VuLjNuEO+9wVhY7dJqAvYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.IOManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.IOManager.html",
+          "hash": "VcbzHskJ1BN1L/G9fWk37Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.BlockParser.BlockName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.BlockParser.BlockName.html",
+          "hash": "6E6V5JXSR8ky4SccBv2flA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.BlockParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.BlockParser.html",
+          "hash": "YJbK0XM40pyblmb54M71fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.BlockProcessingException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.BlockProcessingException.html",
+          "hash": "XbmJnmj2SO6hcJVhKOnmwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.BlockWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.BlockWriter.html",
+          "hash": "ciXtwxP8fWE++pOme0qZ5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.CommandParser.CommandName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.CommandParser.CommandName.html",
+          "hash": "UFr9KteO9VWPdIBIVqf/+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.CommandParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.CommandParser.html",
+          "hash": "/Ij7JDEa76fDWtPuhbxXgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.Line.html",
+          "hash": "F2RXtwDoHPlM7uJMJh1HKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.LineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.LineParser.html",
+          "hash": "Snt+f92YnsqgFoyiGTn4HQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.LoliScript.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.LoliScript.html",
+          "hash": "Yc+XqrPunZAEmS6H26De0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.ScriptingLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.ScriptingLanguage.html",
+          "hash": "+35icroROQLx+T5jgAyxJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.TokenType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.TokenType.html",
+          "hash": "i+ChcrqVywLMNjfOS7CF6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LS.html",
+          "hash": "mlWh4bs4dmWHDmxkIycgGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ListAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ListAction.html",
+          "hash": "XzrYe8kFCiKRaDTSk36MZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LogEntry.html",
+          "hash": "66sTm2ekZCddIC3dAht4HA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.LogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.LogLevel.html",
+          "hash": "vAB3oVBaEretyylXi1EWEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.CData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.CData.html",
+          "hash": "qCubcRTeFpYOjR+6z0v9jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.CProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.CProxy.html",
+          "hash": "JOT7NWEkopwKPYmV3Qq1kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.CVar.VarType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.CVar.VarType.html",
+          "hash": "1OYVGYyxmefUCPZD+EPg1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.CVar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.CVar.html",
+          "hash": "LEaXx89iiDxxCwx0MzDv8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.CustomKeychain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.CustomKeychain.html",
+          "hash": "sEo/URTquii0IZU7A3bsFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.DataPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.DataPool.html",
+          "hash": "w8BZiLSLxDYjI4qqBHY2eQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.DataRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.DataRule.html",
+          "hash": "h7UVT7fy2CoFP7VKch0DXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.EnvironmentSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.EnvironmentSettings.html",
+          "hash": "U2QX/yYM1bJLTN+wY22ciA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.ExportFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.ExportFormat.html",
+          "hash": "6QlXdU+KJFAzNZ3pNRx8xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.Hit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.Hit.html",
+          "hash": "CuUFE1BAimeRX9DhrmoKBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.Key.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.Key.html",
+          "hash": "CgmY8kUlSDvj7HYZbCqZxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.KeyChain.KeychainMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.KeyChain.KeychainMode.html",
+          "hash": "CJ5GzJI9Jvy2MBzzmr+INw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.KeyChain.KeychainType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.KeyChain.KeychainType.html",
+          "hash": "zSCvZQCKdRkzYvfFwJ1vvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.KeyChain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.KeyChain.html",
+          "hash": "2cxTt/y2Ai3kQO4Z4D5GNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.ProxyPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.ProxyPool.html",
+          "hash": "uCgomZn2nahn5zWPZfozyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.ProxyWorking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.ProxyWorking.html",
+          "hash": "fIFSb57TzQvDmXiCtNqXWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.Record.html",
+          "hash": "RdvLgIMJ9+xzuVmfu85sow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.RuleType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.RuleType.html",
+          "hash": "M27Fqat7S1LeguE/wfeadw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.Status.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.Status.html",
+          "hash": "ejboQdywnGRi0uEU0482lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.ValidData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.ValidData.html",
+          "hash": "vWuRvWW5bD1Mef9Al62szQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.VariableList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.VariableList.html",
+          "hash": "aFATMRXhjB1DpsK+H69JVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.Wordlist.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.Wordlist.html",
+          "hash": "HN79Rk+d5qXD3GEBdV4vOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.WordlistType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.WordlistType.html",
+          "hash": "T3oJYyM+DUb5LTTzY+HujQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Models.html",
+          "hash": "KWtYkceVolqtSeaFPh4Uyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.MultipartContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.MultipartContent.html",
+          "hash": "HIR7IPjBIv5SQHKpXXy7zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.MultipartContentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.MultipartContentType.html",
+          "hash": "JZnCirYY6ejnjya0gOZF0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ParseType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ParseType.html",
+          "hash": "VTcSV5mQSuG+V0GUac0k7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.RequestType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.RequestType.html",
+          "hash": "QL2gIHGkljDZjXOKePQXDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ResponseType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ResponseType.html",
+          "hash": "5HCPeJYww7wBMjbANlC2dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Runner.AbortableBackgroundWorker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Runner.AbortableBackgroundWorker.html",
+          "hash": "4dB3yL+4aPO5toACvdPDMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Runner.IRunnerMessaging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Runner.IRunnerMessaging.html",
+          "hash": "DpH7LfCkebNrlNpEkO7dmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Runner.ProxyMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Runner.ProxyMode.html",
+          "hash": "knkx2aTJxov2x7Y0NDDbQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Runner.RunnerBotViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Runner.RunnerBotViewModel.html",
+          "hash": "Hog5O0mcYkxzlxD5Ywv3og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Runner.RunnerViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Runner.RunnerViewModel.html",
+          "hash": "UTV4XRrnIykmN4M2zA3RJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Runner.WorkerStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Runner.WorkerStatus.html",
+          "hash": "956oDpBAJOsEa95NB0qYwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.Runner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.Runner.html",
+          "hash": "/wUkYnX/NPgB3K5CZmiTUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.SBlockBrowserAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.SBlockBrowserAction.html",
+          "hash": "92PFdSFeVOWyCvPAFPdgNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.SBlockElementAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.SBlockElementAction.html",
+          "hash": "ZUiuvm4QKG4r61uWto0+6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.SBlockExecuteJS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.SBlockExecuteJS.html",
+          "hash": "F5+8MJ5A5bW2WhoE/yAALQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.SBlockNavigate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.SBlockNavigate.html",
+          "hash": "kDHqCRC1erBKmLAQhfomug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.TCPCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.TCPCommand.html",
+          "hash": "RbYn4o772uCFZHINAtOkJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.TypeSwitch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.TypeSwitch.html",
+          "hash": "bUvrdRLVOqYVNKcYX0KoJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.UtilityGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.UtilityGroup.html",
+          "hash": "hq9alLw3r1xkarBymicVyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.VarAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.VarAction.html",
+          "hash": "Mk7eMU1ycewePBfSE9DWTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.BotsDisplayMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.BotsDisplayMode.html",
+          "hash": "d3+FDgc5tvjWV5vRdLUDug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.BrowserType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.BrowserType.html",
+          "hash": "6qveoCSkB8S2ZBiYsyJb9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.ConfigViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.ConfigViewModel.html",
+          "hash": "BGjhyCjF9m0gAsTXWZJUqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.CustomInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.CustomInput.html",
+          "hash": "N/wexMPKqV3lkNfrZYFsoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.ProxyReloadSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.ProxyReloadSource.html",
+          "hash": "iOgsWaIhatdDqDMFdvbKZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.RLSettingsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.RLSettingsViewModel.html",
+          "hash": "zu5MKmThppgYKC0DLEhotg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.SettingsCaptchas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.SettingsCaptchas.html",
+          "hash": "2iuEpLS/rXIwYiRtwMmdHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.SettingsGeneral.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.SettingsGeneral.html",
+          "hash": "N2AskVeoQ0KuShPvldJx3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.SettingsProxies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.SettingsProxies.html",
+          "hash": "WA+IJH8IHFSKTRMNR3fu7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.SettingsSelenium.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.SettingsSelenium.html",
+          "hash": "EhksvLyapPFuDVKW4DllIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.ViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.ViewModelBase.html",
+          "hash": "sD/5SfK1Z1Coykpg4tB5pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.ViewModels.html",
+          "hash": "Ct9bx8vk01ez3arrWq22jA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/RuriLib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RuriLib.html",
+          "hash": "T/J8EC3yiM0fu0ZbvjmSSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "U6bB8kSZ1KQUDspBd937PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Sg+nKmnHP++YKMT39ruhpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 117,
+          "skipped_file_count": 54
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

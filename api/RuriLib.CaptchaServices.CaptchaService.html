@@ -1,0 +1,836 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CaptchaService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CaptchaService
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.CaptchaServices.CaptchaService">
+  
+  
+  <h1 id="RuriLib_CaptchaServices_CaptchaService" data-uid="RuriLib.CaptchaServices.CaptchaService" class="text-break">Class CaptchaService
+  </h1>
+  <div class="markdown level0 summary"><p>Represent a captcha-solving service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CaptchaService</span></div>
+      <div class="level2"><a class="xref" href="RuriLib.CaptchaServices.AntiCaptcha.html">AntiCaptcha</a></div>
+      <div class="level2"><a class="xref" href="RuriLib.CaptchaServices.AZCaptcha.html">AZCaptcha</a></div>
+      <div class="level2"><a class="xref" href="RuriLib.CaptchaServices.CaptchasIO.html">CaptchasIO</a></div>
+      <div class="level2"><a class="xref" href="RuriLib.CaptchaServices.DeathByCaptcha.html">DeathByCaptcha</a></div>
+      <div class="level2"><a class="xref" href="RuriLib.CaptchaServices.DeCaptcher.html">DeCaptcher</a></div>
+      <div class="level2"><a class="xref" href="RuriLib.CaptchaServices.ImageTyperz.html">ImageTyperz</a></div>
+      <div class="level2"><a class="xref" href="RuriLib.CaptchaServices.SolveReCaptcha.html">SolveReCaptcha</a></div>
+      <div class="level2"><a class="xref" href="RuriLib.CaptchaServices.TwoCaptcha.html">TwoCaptcha</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.CaptchaServices.html">RuriLib.CaptchaServices</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_CaptchaServices_CaptchaService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CaptchaService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService__ctor_" data-uid="RuriLib.CaptchaServices.CaptchaService.#ctor*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService__ctor_System_String_System_Int32_" data-uid="RuriLib.CaptchaServices.CaptchaService.#ctor(System.String,System.Int32)">CaptchaService(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a captcha service that authenticates via API key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CaptchaService(string apiKey, int timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>The API key of the account</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>The maximum time to wait for captcha completion</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService__ctor_" data-uid="RuriLib.CaptchaServices.CaptchaService.#ctor*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService__ctor_System_String_System_String_System_Int32_" data-uid="RuriLib.CaptchaServices.CaptchaService.#ctor(System.String,System.String,System.Int32)">CaptchaService(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a captcha service that authenticates via username and password.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CaptchaService(string user, string pass, int timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The username of the account</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pass</span></td>
+        <td><p>The password of the account</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>The maximum time to wait for captcha completion</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_ApiKey_" data-uid="RuriLib.CaptchaServices.CaptchaService.ApiKey*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_ApiKey" data-uid="RuriLib.CaptchaServices.CaptchaService.ApiKey">ApiKey</h4>
+  <div class="markdown level1 summary"><p>The API key to access the captcha service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApiKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_Pass_" data-uid="RuriLib.CaptchaServices.CaptchaService.Pass*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_Pass" data-uid="RuriLib.CaptchaServices.CaptchaService.Pass">Pass</h4>
+  <div class="markdown level1 summary"><p>The password to access the captcha service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Pass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_Status_" data-uid="RuriLib.CaptchaServices.CaptchaService.Status*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_Status" data-uid="RuriLib.CaptchaServices.CaptchaService.Status">Status</h4>
+  <div class="markdown level1 summary"><p>The status of the captcha service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CaptchaService.CaptchaStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.CaptchaServices.CaptchaService.CaptchaStatus.html">CaptchaService.CaptchaStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_TaskId_" data-uid="RuriLib.CaptchaServices.CaptchaService.TaskId*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_TaskId" data-uid="RuriLib.CaptchaServices.CaptchaService.TaskId">TaskId</h4>
+  <div class="markdown level1 summary"><p>The id of the captcha-solving task being performed on the remote server, used to periodically query the status of the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public dynamic TaskId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_Timeout_" data-uid="RuriLib.CaptchaServices.CaptchaService.Timeout*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_Timeout" data-uid="RuriLib.CaptchaServices.CaptchaService.Timeout">Timeout</h4>
+  <div class="markdown level1 summary"><p>The maximum time to wait for captcha completion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Timeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_User_" data-uid="RuriLib.CaptchaServices.CaptchaService.User*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_User" data-uid="RuriLib.CaptchaServices.CaptchaService.User">User</h4>
+  <div class="markdown level1 summary"><p>The username to access the captcha service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string User { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_GetBalance_" data-uid="RuriLib.CaptchaServices.CaptchaService.GetBalance*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_GetBalance" data-uid="RuriLib.CaptchaServices.CaptchaService.GetBalance">GetBalance()</h4>
+  <div class="markdown level1 summary"><p>Gets the remaining balance in the account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetBalance()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The balance of the account</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_GetBase64_" data-uid="RuriLib.CaptchaServices.CaptchaService.GetBase64*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_GetBase64_System_Drawing_Bitmap_System_Drawing_Imaging_ImageFormat_" data-uid="RuriLib.CaptchaServices.CaptchaService.GetBase64(System.Drawing.Bitmap,System.Drawing.Imaging.ImageFormat)">GetBase64(Bitmap, ImageFormat)</h4>
+  <div class="markdown level1 summary"><p>Gets the base64-encoded string from an image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetBase64(Bitmap image, ImageFormat format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>The bitmap image</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Drawing.Imaging.ImageFormat</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The format of the bitmap image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The base64-encoded string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_GetBytes_" data-uid="RuriLib.CaptchaServices.CaptchaService.GetBytes*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_GetBytes_System_Drawing_Bitmap_" data-uid="RuriLib.CaptchaServices.CaptchaService.GetBytes(System.Drawing.Bitmap)">GetBytes(Bitmap)</h4>
+  <div class="markdown level1 summary"><p>Gets the bytes from an image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte[] GetBytes(Bitmap image)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>The bitmap image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The bytes of the image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_GetStream_" data-uid="RuriLib.CaptchaServices.CaptchaService.GetStream*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_GetStream_System_Drawing_Bitmap_System_Drawing_Imaging_ImageFormat_" data-uid="RuriLib.CaptchaServices.CaptchaService.GetStream(System.Drawing.Bitmap,System.Drawing.Imaging.ImageFormat)">GetStream(Bitmap, ImageFormat)</h4>
+  <div class="markdown level1 summary"><p>Gets a memory stream from an image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Stream GetStream(Bitmap image, ImageFormat format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>The bitmap image</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Drawing.Imaging.ImageFormat</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The format of the bitmap image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><p>The memory stream</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_PostSync_" data-uid="RuriLib.CaptchaServices.CaptchaService.PostSync*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_PostSync_System_Net_Http_HttpClient_System_String_System_Net_Http_HttpContent_" data-uid="RuriLib.CaptchaServices.CaptchaService.PostSync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)">PostSync(HttpClient, String, HttpContent)</h4>
+  <div class="markdown level1 summary"><p>Performs a synchronous POST request that returns a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string PostSync(HttpClient client, string url, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The HttpClient that performs the async request</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL to call</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content that needs to be posted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The response as a string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_PostSync2_" data-uid="RuriLib.CaptchaServices.CaptchaService.PostSync2*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_PostSync2_System_Net_Http_HttpClient_System_String_System_Net_Http_HttpContent_" data-uid="RuriLib.CaptchaServices.CaptchaService.PostSync2(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)">PostSync2(HttpClient, String, HttpContent)</h4>
+  <div class="markdown level1 summary"><p>Performs a synchronous POST request that returns a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte[] PostSync2(HttpClient client, string url, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The HttpClient that performs the async request</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL to call</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content that needs to be posted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The response as a byte array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_PostSync3_" data-uid="RuriLib.CaptchaServices.CaptchaService.PostSync3*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_PostSync3_System_Net_Http_HttpClient_System_String_System_Net_Http_HttpContent_" data-uid="RuriLib.CaptchaServices.CaptchaService.PostSync3(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)">PostSync3(HttpClient, String, HttpContent)</h4>
+  <div class="markdown level1 summary"><p>Performs a synchronous POST request that returns a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Stream PostSync3(HttpClient client, string url, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The HttpClient that performs the async request</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL to call</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content that needs to be posted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><p>The response as a stream</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_SolveCaptcha_" data-uid="RuriLib.CaptchaServices.CaptchaService.SolveCaptcha*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_SolveCaptcha_System_Drawing_Bitmap_" data-uid="RuriLib.CaptchaServices.CaptchaService.SolveCaptcha(System.Drawing.Bitmap)">SolveCaptcha(Bitmap)</h4>
+  <div class="markdown level1 summary"><p>Solves an image captcha challenge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SolveCaptcha(Bitmap image)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>The bitmap image of the challenge</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The text written in the image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_CaptchaServices_CaptchaService_SolveRecaptcha_" data-uid="RuriLib.CaptchaServices.CaptchaService.SolveRecaptcha*"></a>
+  <h4 id="RuriLib_CaptchaServices_CaptchaService_SolveRecaptcha_System_String_System_String_" data-uid="RuriLib.CaptchaServices.CaptchaService.SolveRecaptcha(System.String,System.String)">SolveRecaptcha(String, String)</h4>
+  <div class="markdown level1 summary"><p>Solves a reCaptcha challenge for a given site.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SolveRecaptcha(string siteKey, string siteUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">siteKey</span></td>
+        <td><p>The SiteKey found in the page&apos;s source code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">siteUrl</span></td>
+        <td><p>The URL of the site to solve a reCaptcha for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The g-recaptcha-response of the challenge</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

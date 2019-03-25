@@ -1,0 +1,867 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IOManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IOManager
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.IOManager">
+  
+  
+  <h1 id="RuriLib_IOManager" data-uid="RuriLib.IOManager" class="text-break">Class IOManager
+  </h1>
+  <div class="markdown level0 summary"><p>Static Class used to access serialization and deserialization of objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IOManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.html">RuriLib</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_IOManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class IOManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_IOManager_CloneBlock_" data-uid="RuriLib.IOManager.CloneBlock*"></a>
+  <h4 id="RuriLib_IOManager_CloneBlock_RuriLib_BlockBase_" data-uid="RuriLib.IOManager.CloneBlock(RuriLib.BlockBase)">CloneBlock(BlockBase)</h4>
+  <div class="markdown level1 summary"><p>Clones a BlockBase object by serializing and deserializing it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BlockBase CloneBlock(BlockBase block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BlockBase.html">BlockBase</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The object to clone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BlockBase.html">BlockBase</a></td>
+        <td><p>The cloned BlockBase object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_CloneConfig_" data-uid="RuriLib.IOManager.CloneConfig*"></a>
+  <h4 id="RuriLib_IOManager_CloneConfig_RuriLib_Config_" data-uid="RuriLib.IOManager.CloneConfig(RuriLib.Config)">CloneConfig(Config)</h4>
+  <div class="markdown level1 summary"><p>Clones a Config object by serializing and deserializing it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Config CloneConfig(Config config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Config.html">Config</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The object to clone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Config.html">Config</a></td>
+        <td><p>The cloned Config object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_CloneProxies_" data-uid="RuriLib.IOManager.CloneProxies*"></a>
+  <h4 id="RuriLib_IOManager_CloneProxies_System_Collections_Generic_List_RuriLib_Models_CProxy__" data-uid="RuriLib.IOManager.CloneProxies(System.Collections.Generic.List{RuriLib.Models.CProxy})">CloneProxies(List&lt;CProxy&gt;)</h4>
+  <div class="markdown level1 summary"><p>Clones a list of proxies by serializing and deserializing it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;CProxy&gt; CloneProxies(List&lt;CProxy&gt; proxies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td><span class="parametername">proxies</span></td>
+        <td><p>The list of proxies to clone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td><p>The cloned list of proxies</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_DeserializeBlock_" data-uid="RuriLib.IOManager.DeserializeBlock*"></a>
+  <h4 id="RuriLib_IOManager_DeserializeBlock_System_String_" data-uid="RuriLib.IOManager.DeserializeBlock(System.String)">DeserializeBlock(String)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a Block from a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BlockBase DeserializeBlock(string block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The JSON-encoded string with TypeNameHandling on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BlockBase.html">BlockBase</a></td>
+        <td><p>An instance of BlockBase</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_DeserializeBlocks_" data-uid="RuriLib.IOManager.DeserializeBlocks*"></a>
+  <h4 id="RuriLib_IOManager_DeserializeBlocks_System_String_" data-uid="RuriLib.IOManager.DeserializeBlocks(System.String)">DeserializeBlocks(String)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a list of blocks from a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;BlockBase&gt; DeserializeBlocks(string blocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blocks</span></td>
+        <td><p>The JSON-encoded string with TypeNameHandling on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.BlockBase.html">BlockBase</a>&gt;</td>
+        <td><p>A list of instances of BlockBase</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_DeserializeConfig_" data-uid="RuriLib.IOManager.DeserializeConfig*"></a>
+  <h4 id="RuriLib_IOManager_DeserializeConfig_System_String_" data-uid="RuriLib.IOManager.DeserializeConfig(System.String)">DeserializeConfig(String)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a Config object from a loli-formatted string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Config DeserializeConfig(string config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The loli-formatted string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Config.html">Config</a></td>
+        <td><p>An instance of the Config object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_DeserializeProxies_" data-uid="RuriLib.IOManager.DeserializeProxies*"></a>
+  <h4 id="RuriLib_IOManager_DeserializeProxies_System_String_" data-uid="RuriLib.IOManager.DeserializeProxies(System.String)">DeserializeProxies(String)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a list of proxies from a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;CProxy&gt; DeserializeProxies(string proxies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">proxies</span></td>
+        <td><p>The JSON-encoded list of proxies with TypeNameHandling on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td><p>A list of CProxy objects</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_LoadConfig_" data-uid="RuriLib.IOManager.LoadConfig*"></a>
+  <h4 id="RuriLib_IOManager_LoadConfig_System_String_" data-uid="RuriLib.IOManager.LoadConfig(System.String)">LoadConfig(String)</h4>
+  <div class="markdown level1 summary"><p>Loads a Config object from a .loli file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Config LoadConfig(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The config file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Config.html">Config</a></td>
+        <td><p>A Config object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_LoadSettings_" data-uid="RuriLib.IOManager.LoadSettings*"></a>
+  <h4 id="RuriLib_IOManager_LoadSettings_System_String_" data-uid="RuriLib.IOManager.LoadSettings(System.String)">LoadSettings(String)</h4>
+  <div class="markdown level1 summary"><p>Loads the RuriLib settings from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RLSettingsViewModel LoadSettings(string settingsFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settingsFile</span></td>
+        <td><p>The file you want to load from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.ViewModels.RLSettingsViewModel.html">RLSettingsViewModel</a></td>
+        <td><p>An instance of RLSettingsViewModel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_ParseEnvironmentSettings_" data-uid="RuriLib.IOManager.ParseEnvironmentSettings*"></a>
+  <h4 id="RuriLib_IOManager_ParseEnvironmentSettings_System_String_" data-uid="RuriLib.IOManager.ParseEnvironmentSettings(System.String)">ParseEnvironmentSettings(String)</h4>
+  <div class="markdown level1 summary"><p>Parses the EnvironmentSettings from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EnvironmentSettings ParseEnvironmentSettings(string envFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">envFile</span></td>
+        <td><p>The .ini file of the settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.EnvironmentSettings.html">EnvironmentSettings</a></td>
+        <td><p>The loaded EnvironmentSettings object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_SaveConfig_" data-uid="RuriLib.IOManager.SaveConfig*"></a>
+  <h4 id="RuriLib_IOManager_SaveConfig_RuriLib_Config_System_String_" data-uid="RuriLib.IOManager.SaveConfig(RuriLib.Config,System.String)">SaveConfig(Config, String)</h4>
+  <div class="markdown level1 summary"><p>Saves a Config object to a .loli file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SaveConfig(Config config, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Config.html">Config</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The viewmodel of the config to save</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The path of the file where the Config will be saved</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the file has been saved successfully</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_SaveSettings_" data-uid="RuriLib.IOManager.SaveSettings*"></a>
+  <h4 id="RuriLib_IOManager_SaveSettings_System_String_RuriLib_ViewModels_RLSettingsViewModel_" data-uid="RuriLib.IOManager.SaveSettings(System.String,RuriLib.ViewModels.RLSettingsViewModel)">SaveSettings(String, RLSettingsViewModel)</h4>
+  <div class="markdown level1 summary"><p>Saves the RuriLib settings to a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SaveSettings(string settingsFile, RLSettingsViewModel settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settingsFile</span></td>
+        <td><p>The file you want to save to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RuriLib.ViewModels.RLSettingsViewModel.html">RLSettingsViewModel</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>The RuriLib settings object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_SerializeBlock_" data-uid="RuriLib.IOManager.SerializeBlock*"></a>
+  <h4 id="RuriLib_IOManager_SerializeBlock_RuriLib_BlockBase_" data-uid="RuriLib.IOManager.SerializeBlock(RuriLib.BlockBase)">SerializeBlock(BlockBase)</h4>
+  <div class="markdown level1 summary"><p>Serializes a block to a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeBlock(BlockBase block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.BlockBase.html">BlockBase</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block to serialize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The JSON-encoded BlockBase object with TypeNameHandling on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_SerializeBlocks_" data-uid="RuriLib.IOManager.SerializeBlocks*"></a>
+  <h4 id="RuriLib_IOManager_SerializeBlocks_System_Collections_Generic_List_RuriLib_BlockBase__" data-uid="RuriLib.IOManager.SerializeBlocks(System.Collections.Generic.List{RuriLib.BlockBase})">SerializeBlocks(List&lt;BlockBase&gt;)</h4>
+  <div class="markdown level1 summary"><p>Serializes a list of blocks to a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeBlocks(List&lt;BlockBase&gt; blocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.BlockBase.html">BlockBase</a>&gt;</td>
+        <td><span class="parametername">blocks</span></td>
+        <td><p>The list of blocks to serialize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The JSON-encoded List of BlockBase objects with TypeNameHandling on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_SerializeConfig_" data-uid="RuriLib.IOManager.SerializeConfig*"></a>
+  <h4 id="RuriLib_IOManager_SerializeConfig_RuriLib_Config_" data-uid="RuriLib.IOManager.SerializeConfig(RuriLib.Config)">SerializeConfig(Config)</h4>
+  <div class="markdown level1 summary"><p>Serializes a Config object to the loli-formatted string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeConfig(Config config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Config.html">Config</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The Config to serialize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The loli-formatted string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_IOManager_SerializeProxies_" data-uid="RuriLib.IOManager.SerializeProxies*"></a>
+  <h4 id="RuriLib_IOManager_SerializeProxies_System_Collections_Generic_List_RuriLib_Models_CProxy__" data-uid="RuriLib.IOManager.SerializeProxies(System.Collections.Generic.List{RuriLib.Models.CProxy})">SerializeProxies(List&lt;CProxy&gt;)</h4>
+  <div class="markdown level1 summary"><p>Serializes a list of proxies to a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeProxies(List&lt;CProxy&gt; proxies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td><span class="parametername">proxies</span></td>
+        <td><p>The list of proxies to serialize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The JSON-encoded list of CProxy objects with TypeNameHandling on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

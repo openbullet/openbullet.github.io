@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ProxyPool
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ProxyPool
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.Models.ProxyPool">
+  
+  
+  <h1 id="RuriLib_Models_ProxyPool" data-uid="RuriLib.Models.ProxyPool" class="text-break">Class ProxyPool
+  </h1>
+  <div class="markdown level0 summary"><p>Class that manages a pool of proxies.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ProxyPool</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.Models.html">RuriLib.Models</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_Models_ProxyPool_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ProxyPool</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RuriLib_Models_ProxyPool__ctor_" data-uid="RuriLib.Models.ProxyPool.#ctor*"></a>
+  <h4 id="RuriLib_Models_ProxyPool__ctor_System_Collections_Generic_IEnumerable_System_String__Extreme_Net_ProxyType_" data-uid="RuriLib.Models.ProxyPool.#ctor(System.Collections.Generic.IEnumerable{System.String},Extreme.Net.ProxyType)">ProxyPool(IEnumerable&lt;String&gt;, ProxyType)</h4>
+  <div class="markdown level1 summary"><p>Initializes the proxy pool given a collection of string to be parsed as proxies and their type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProxyPool(IEnumerable&lt;string&gt; proxies, ProxyType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">proxies</span></td>
+        <td><p>The collection of strings to parse the proxies from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Extreme.Net.ProxyType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the proxies</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_ProxyPool__ctor_" data-uid="RuriLib.Models.ProxyPool.#ctor*"></a>
+  <h4 id="RuriLib_Models_ProxyPool__ctor_System_Collections_Generic_List_RuriLib_Models_CProxy__" data-uid="RuriLib.Models.ProxyPool.#ctor(System.Collections.Generic.List{RuriLib.Models.CProxy})">ProxyPool(List&lt;CProxy&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes the proxy pool given a collection of CProxy objects.</p>
+<p>The proxies will be first cloned and then stored in the list.</p>
+<p>They will also be unbanned to make sure there are no leftovers from previous checks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProxyPool(List&lt;CProxy&gt; proxies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td><span class="parametername">proxies</span></td>
+        <td><p>The list of CProxy objects to be cloned and added to the list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RuriLib_Models_ProxyPool_Alive_" data-uid="RuriLib.Models.ProxyPool.Alive*"></a>
+  <h4 id="RuriLib_Models_ProxyPool_Alive" data-uid="RuriLib.Models.ProxyPool.Alive">Alive</h4>
+  <div class="markdown level1 summary"><p>The list of Alive proxies (AVAILABLE or BUSY).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CProxy&gt; Alive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_ProxyPool_Available_" data-uid="RuriLib.Models.ProxyPool.Available*"></a>
+  <h4 id="RuriLib_Models_ProxyPool_Available" data-uid="RuriLib.Models.ProxyPool.Available">Available</h4>
+  <div class="markdown level1 summary"><p>The list of Available proxies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CProxy&gt; Available { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_ProxyPool_Bad_" data-uid="RuriLib.Models.ProxyPool.Bad*"></a>
+  <h4 id="RuriLib_Models_ProxyPool_Bad" data-uid="RuriLib.Models.ProxyPool.Bad">Bad</h4>
+  <div class="markdown level1 summary"><p>The list of Bad proxies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CProxy&gt; Bad { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_ProxyPool_Banned_" data-uid="RuriLib.Models.ProxyPool.Banned*"></a>
+  <h4 id="RuriLib_Models_ProxyPool_Banned" data-uid="RuriLib.Models.ProxyPool.Banned">Banned</h4>
+  <div class="markdown level1 summary"><p>The list of Banned proxies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CProxy&gt; Banned { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_ProxyPool_Proxies_" data-uid="RuriLib.Models.ProxyPool.Proxies*"></a>
+  <h4 id="RuriLib_Models_ProxyPool_Proxies" data-uid="RuriLib.Models.ProxyPool.Proxies">Proxies</h4>
+  <div class="markdown level1 summary"><p>The full list of proxies in the pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CProxy&gt; Proxies { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_Models_ProxyPool_ClearCF_" data-uid="RuriLib.Models.ProxyPool.ClearCF*"></a>
+  <h4 id="RuriLib_Models_ProxyPool_ClearCF" data-uid="RuriLib.Models.ProxyPool.ClearCF">ClearCF()</h4>
+  <div class="markdown level1 summary"><p>Clears the Clearance and Cfduid cookies set by Cloudflare.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCF()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_Models_ProxyPool_GetProxy_" data-uid="RuriLib.Models.ProxyPool.GetProxy*"></a>
+  <h4 id="RuriLib_Models_ProxyPool_GetProxy_System_Boolean_System_Int32_System_Boolean_" data-uid="RuriLib.Models.ProxyPool.GetProxy(System.Boolean,System.Int32,System.Boolean)">GetProxy(Boolean, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Tries to return the first available proxy from the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CProxy GetProxy(bool evenBusy, int maxUses, bool neverBan = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">evenBusy</span></td>
+        <td><p>Whether to include proxies that are being used by other bots</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxUses</span></td>
+        <td><p>The maximum uses of a proxy, after which it will be banned (0 for infinite)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">neverBan</span></td>
+        <td><p>Whether a proxy can ever be banned</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a></td>
+        <td><p>The first available proxy respecting the conditions or null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_ProxyPool_UnbanAll_" data-uid="RuriLib.Models.ProxyPool.UnbanAll*"></a>
+  <h4 id="RuriLib_Models_ProxyPool_UnbanAll" data-uid="RuriLib.Models.ProxyPool.UnbanAll">UnbanAll()</h4>
+  <div class="markdown level1 summary"><p>Sets all the BANNED and BAD proxies status to AVAILABLE and resets their Uses. It also clears the Cloudflare cookies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnbanAll()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

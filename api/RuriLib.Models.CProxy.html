@@ -1,0 +1,856 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CProxy
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CProxy
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RuriLib.Models.CProxy">
+  
+  
+  <h1 id="RuriLib_Models_CProxy" data-uid="RuriLib.Models.CProxy" class="text-break">Class CProxy
+  </h1>
+  <div class="markdown level0 summary"><p>A proxy that supports http(s) and socks4/4a/5 protocols, authorization and chaining.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CProxy</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RuriLib.Models.html">RuriLib.Models</a></h6>
+  <h6><strong>Assembly</strong>: RuriLib.dll</h6>
+  <h5 id="RuriLib_Models_CProxy_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CProxy</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RuriLib_Models_CProxy__ctor_" data-uid="RuriLib.Models.CProxy.#ctor*"></a>
+  <h4 id="RuriLib_Models_CProxy__ctor" data-uid="RuriLib.Models.CProxy.#ctor">CProxy()</h4>
+  <div class="markdown level1 summary"><p>Needed for NoSQL deserialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CProxy()</code></pre>
+  </div>
+  
+  
+  <a id="RuriLib_Models_CProxy__ctor_" data-uid="RuriLib.Models.CProxy.#ctor*"></a>
+  <h4 id="RuriLib_Models_CProxy__ctor_System_String_Extreme_Net_ProxyType_" data-uid="RuriLib.Models.CProxy.#ctor(System.String,Extreme.Net.ProxyType)">CProxy(String, ProxyType)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy given a string and a proxy type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CProxy(string proxy, ProxyType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">proxy</span></td>
+        <td><p>The unparsed proxy string</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Extreme.Net.ProxyType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The proxy type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RuriLib_Models_CProxy_Cfduid_" data-uid="RuriLib.Models.CProxy.Cfduid*"></a>
+  <h4 id="RuriLib_Models_CProxy_Cfduid" data-uid="RuriLib.Models.CProxy.Cfduid">Cfduid</h4>
+  <div class="markdown level1 summary"><p>The cfduid cookie from Cloudflare.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public string Cfduid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Clearance_" data-uid="RuriLib.Models.CProxy.Clearance*"></a>
+  <h4 id="RuriLib_Models_CProxy_Clearance" data-uid="RuriLib.Models.CProxy.Clearance">Clearance</h4>
+  <div class="markdown level1 summary"><p>The clearance cookie from Cloudflare.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public string Clearance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Country_" data-uid="RuriLib.Models.CProxy.Country*"></a>
+  <h4 id="RuriLib_Models_CProxy_Country" data-uid="RuriLib.Models.CProxy.Country">Country</h4>
+  <div class="markdown level1 summary"><p>The country of the proxy&apos;s ip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Country { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_HasNext_" data-uid="RuriLib.Models.CProxy.HasNext*"></a>
+  <h4 id="RuriLib_Models_CProxy_HasNext" data-uid="RuriLib.Models.CProxy.HasNext">HasNext</h4>
+  <div class="markdown level1 summary"><p>Whether the proxy has a successor in the Proxy Chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public bool HasNext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Hooked_" data-uid="RuriLib.Models.CProxy.Hooked*"></a>
+  <h4 id="RuriLib_Models_CProxy_Hooked" data-uid="RuriLib.Models.CProxy.Hooked">Hooked</h4>
+  <div class="markdown level1 summary"><p>The number of bots the proxy is hooked to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public int Hooked { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Host_" data-uid="RuriLib.Models.CProxy.Host*"></a>
+  <h4 id="RuriLib_Models_CProxy_Host" data-uid="RuriLib.Models.CProxy.Host">Host</h4>
+  <div class="markdown level1 summary"><p>The Host string parsed from the proxy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public string Host { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Id_" data-uid="RuriLib.Models.CProxy.Id*"></a>
+  <h4 id="RuriLib_Models_CProxy_Id" data-uid="RuriLib.Models.CProxy.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Needed for NoSQL storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_IsNumeric_" data-uid="RuriLib.Models.CProxy.IsNumeric*"></a>
+  <h4 id="RuriLib_Models_CProxy_IsNumeric" data-uid="RuriLib.Models.CProxy.IsNumeric">IsNumeric</h4>
+  <div class="markdown level1 summary"><p>Whether the proxy is numeric.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public bool IsNumeric { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_IsValidNumeric_" data-uid="RuriLib.Models.CProxy.IsValidNumeric*"></a>
+  <h4 id="RuriLib_Models_CProxy_IsValidNumeric" data-uid="RuriLib.Models.CProxy.IsValidNumeric">IsValidNumeric</h4>
+  <div class="markdown level1 summary"><p>Whether the proxy is a valid numeric proxy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public bool IsValidNumeric { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_LastChecked_" data-uid="RuriLib.Models.CProxy.LastChecked*"></a>
+  <h4 id="RuriLib_Models_CProxy_LastChecked" data-uid="RuriLib.Models.CProxy.LastChecked">LastChecked</h4>
+  <div class="markdown level1 summary"><p>When the proxy was last checked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastChecked { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_LastUsed_" data-uid="RuriLib.Models.CProxy.LastUsed*"></a>
+  <h4 id="RuriLib_Models_CProxy_LastUsed" data-uid="RuriLib.Models.CProxy.LastUsed">LastUsed</h4>
+  <div class="markdown level1 summary"><p>When the proxy was last used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastUsed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Next_" data-uid="RuriLib.Models.CProxy.Next*"></a>
+  <h4 id="RuriLib_Models_CProxy_Next" data-uid="RuriLib.Models.CProxy.Next">Next</h4>
+  <div class="markdown level1 summary"><p>The next proxy object in a Proxy Chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CProxy Next { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Password_" data-uid="RuriLib.Models.CProxy.Password*"></a>
+  <h4 id="RuriLib_Models_CProxy_Password" data-uid="RuriLib.Models.CProxy.Password">Password</h4>
+  <div class="markdown level1 summary"><p>The password used for authentication (empty if none).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Password { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Ping_" data-uid="RuriLib.Models.CProxy.Ping*"></a>
+  <h4 id="RuriLib_Models_CProxy_Ping" data-uid="RuriLib.Models.CProxy.Ping">Ping</h4>
+  <div class="markdown level1 summary"><p>The response delay of the proxy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Ping { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Port_" data-uid="RuriLib.Models.CProxy.Port*"></a>
+  <h4 id="RuriLib_Models_CProxy_Port" data-uid="RuriLib.Models.CProxy.Port">Port</h4>
+  <div class="markdown level1 summary"><p>The Port string parsed from the proxy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public string Port { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Proxy_" data-uid="RuriLib.Models.CProxy.Proxy*"></a>
+  <h4 id="RuriLib_Models_CProxy_Proxy" data-uid="RuriLib.Models.CProxy.Proxy">Proxy</h4>
+  <div class="markdown level1 summary"><p>The unparsed proxy string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Proxy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Status_" data-uid="RuriLib.Models.CProxy.Status*"></a>
+  <h4 id="RuriLib_Models_CProxy_Status" data-uid="RuriLib.Models.CProxy.Status">Status</h4>
+  <div class="markdown level1 summary"><p>The status of the proxy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public Status Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.Status.html">Status</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Type_" data-uid="RuriLib.Models.CProxy.Type*"></a>
+  <h4 id="RuriLib_Models_CProxy_Type" data-uid="RuriLib.Models.CProxy.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The type of proxy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProxyType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Extreme.Net.ProxyType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_UsedAgo_" data-uid="RuriLib.Models.CProxy.UsedAgo*"></a>
+  <h4 id="RuriLib_Models_CProxy_UsedAgo" data-uid="RuriLib.Models.CProxy.UsedAgo">UsedAgo</h4>
+  <div class="markdown level1 summary"><p>How long ago the proxy was used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public TimeSpan UsedAgo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Username_" data-uid="RuriLib.Models.CProxy.Username*"></a>
+  <h4 id="RuriLib_Models_CProxy_Username" data-uid="RuriLib.Models.CProxy.Username">Username</h4>
+  <div class="markdown level1 summary"><p>The username used for authentication (empty if none).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Username { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Uses_" data-uid="RuriLib.Models.CProxy.Uses*"></a>
+  <h4 id="RuriLib_Models_CProxy_Uses" data-uid="RuriLib.Models.CProxy.Uses">Uses</h4>
+  <div class="markdown level1 summary"><p>The number of times the proxy was used for a check.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BsonIgnore]
+public int Uses { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Working_" data-uid="RuriLib.Models.CProxy.Working*"></a>
+  <h4 id="RuriLib_Models_CProxy_Working" data-uid="RuriLib.Models.CProxy.Working">Working</h4>
+  <div class="markdown level1 summary"><p>The Working Status of the proxy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProxyWorking Working { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.ProxyWorking.html">ProxyWorking</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RuriLib_Models_CProxy_GetClient_" data-uid="RuriLib.Models.CProxy.GetClient*"></a>
+  <h4 id="RuriLib_Models_CProxy_GetClient" data-uid="RuriLib.Models.CProxy.GetClient">GetClient()</h4>
+  <div class="markdown level1 summary"><p>Gets the ProxyClient related to the specific proxy type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProxyClient GetClient()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Extreme.Net.ProxyClient</span></td>
+        <td><p>The ProxyClient to be used in a HttpRequest</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RuriLib_Models_CProxy_Parse_" data-uid="RuriLib.Models.CProxy.Parse*"></a>
+  <h4 id="RuriLib_Models_CProxy_Parse_System_String_" data-uid="RuriLib.Models.CProxy.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Parses a CProxy object from an advanced string. Supports Proxy Chains.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CProxy Parse(string proxy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">proxy</span></td>
+        <td><p>The string to parse the proxy from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RuriLib.Models.CProxy.html">CProxy</a></td>
+        <td><p>The parsed CProxy object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
