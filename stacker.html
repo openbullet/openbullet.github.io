@@ -140,7 +140,7 @@
             <p>Variables also need be marked for <strong>Capture</strong> if you want them to be saved inside a hit.</p>
             <p>Variables can be <strong>hidden</strong> and not be normally editable by the user nor displayed, like in the case of HEADERS, COOKIES, SOURCE etc.</p>
             <p>In order to exploit all the potential that variables offer, take a look at the Utility Block and to LoliScript commands like SET and DELETE.</p>
-            <img src="ss/stacker/002-variables.JPG"/>
+            <img src="ss/stacker/002-variables.jpg"/>
 
             <!-- BLOCKS -->
             <h1 id="blocks">Blocks</h1>
@@ -153,12 +153,12 @@
             <p>The <strong>label</strong> of a block will help you understand which block does what, and it's also essential when using the JUMP directive in LoliScript.</p>
             <p>When you <strong>add</strong> a block, a menu with all the available blocks will be displayed. The blocks in the bottom part are meant to be used in Configs
               that work with selenium.</p>
-            <img src="ss/stacker/002a-blocks.JPG"/>
+            <img src="ss/stacker/002a-blocks.jpg"/>
 
             <!-- REQUEST BLOCK -->
             <h1 id="request">Request Block</h1>
             <p>The Request block allows you to perform requests and work with the response from the server.</p>
-            <img src="ss/stacker/003-request.JPG"/>
+            <img src="ss/stacker/003-request.jpg"/>
             <p>The <strong>POST Data</strong>, which is the content sent in the request body below the headers, can be broken into multiple lines by using the linebreak character \n.</p>
             <p>When the response source is not important, you can untick <strong>'Read Response Source'</strong> and the SOURCE variable will not be set, saving CPU time.
                 When we expect a file response from the server (e.g. when downloading a zip file), the file will be saved to the File Path defined in the block.</p>
@@ -179,12 +179,12 @@
             <!-- UTILITY BLOCK -->
             <h1 id="utility">Utility Block</h1>
             <p>The Utility block allows you to work with variables or files and to convert values.</p>
-            <img src="ss/stacker/004-utility.JPG"/>
+            <img src="ss/stacker/004-utility.jpg"/>
 
             <!-- KEYCHECK BLOCK -->
             <h1 id="keycheck">KeyCheck Block</h1>
             <p>The KeyCheck block allows to modify the Status of the Bot by verifying sets of keys.</p>
-            <img src="ss/stacker/005-keycheck.JPG"/>
+            <img src="ss/stacker/005-keycheck.jpg"/>
             <p>The block will first check the Global Ban Keys defined in the proxy settings. The <strong>Ban on 4xx</strong> option is used to change the Bot's
               status to BAN in case the last response had a response code of the 4th category (e.g. unauthorized, forbidden, not found). The <strong>Ban if no key found</strong>
               option will change the Bot's status to BAN if no KeyChain was triggered; if it's disabled, it will keep the previous Bot status.</p>
@@ -199,7 +199,7 @@
             <!-- PARSE BLOCK -->
             <h1 id="parse">Parse Block</h1>
             <p>The Parse block allows you to parse data from a page with many different parsing methods and store it into a Single or List variable.</p>
-            <img src="ss/stacker/006-parse.JPG"/>
+            <img src="ss/stacker/006-parse.jpg"/>
             <p>The supported parsing algorithms are LR, CSS, JSON and REGEX.</p>
             <ul>
               <li><strong>LR</strong> (Left and Right strings) allows to parse text between two strings</li>
@@ -215,7 +215,7 @@
             <!-- FUNCTION BLOCK -->
             <h1 id="function">Function Block</h1>
             <p>The Function block provides a lot of functions for working with variables of Single or List type.</p>
-            <img src="ss/stacker/007-function.JPG"/>
+            <img src="ss/stacker/007-function.jpg"/>
             <p>This block also accepts as input <strong>list</strong> variables with a jolly index (e.g. <span class="code">&lt;LIST[*]&gt;</span>) which means that the function will be executed on each
               element of the List variable.</p>
             <p>The output string (or list of strings) will then be inserted into a variable with the name chosen in the textbox and, if 'is capture' is ticked, it will
@@ -224,7 +224,7 @@
             <!-- RECAPTCHA BLOCK -->
             <h1 id="recaptcha">ReCaptcha Block</h1>
             <p>The ReCaptcha block allows to solve a reCaptcha challenge through captcha solving services.</p>
-            <img src="ss/stacker/008-recaptcha.JPG"/>
+            <img src="ss/stacker/008-recaptcha.jpg"/>
             <p>The <strong>url</strong> represents the url of the page where the captcha appears, while the <strong>sitekey</strong> can be found inside the
               page source or set automatically with the corresponding button.</p>
             <p>The solved challenge will be inserted in a Single variable with the given variable name.</p>
@@ -232,7 +232,7 @@
             <!-- CAPTCHA BLOCK -->
             <h1 id="captcha">Captcha Block</h1>
             <p>The Captcha block allows to solve an image captcha challenge through captcha solving services.</p>
-            <img src="ss/stacker/009-captcha.JPG"/>
+            <img src="ss/stacker/009-captcha.jpg"/>
             <p>The <strong>url</strong> represents the link to download the captcha image. If the page shows the captcha as a <strong>base64</strong>-encoded image in its source you can
               use that value and tick the corresponding box.</p>
             <p>You can also use a <strong>selenium screenshot</strong> in case you need to solve a captcha when using selenium (first you need to screenshot the correct element
@@ -242,37 +242,37 @@
             <!-- BYPASSCF BLOCK -->
             <h1 id="bypasscf">BypassCF Block</h1>
             <p>The BypassCF Block allows to solve a Cloudflare challenge and bypass the anti-ddos page.</p>
-            <img src="ss/stacker/010-bypasscf.JPG"/>
+            <img src="ss/stacker/010-bypasscf.jpg"/>
             <p>The <strong>url</strong> is the url of the Cloudflare-protected page. The <strong>user-agent</strong> is also essential for solving the challenge.</p>
 
             <!-- TCP BLOCK -->
             <h1 id="tcp">TCP Block</h1>
             <p>The TCP block allows to communicate with a server without being forced to use the HTTP protocol.</p>
-            <img src="ss/stacker/011-tcp.JPG"/>
+            <img src="ss/stacker/011-tcp.jpg"/>
             <p>The server's response will be stored inside the variable with the given variable name.</p>
             <p>Remember to <strong>disconnect</strong> from the host before the Bot terminates or it will waste resources.</p>
 
             <!-- NAVIGATE BLOCK -->
             <h1 id="navigate">Navigate Block</h1>
             <p>The Navigate block will navigate to a page with the opened selenium browser.</p>
-            <img src="ss/stacker/012-navigate.JPG"/>
+            <img src="ss/stacker/012-navigate.jpg"/>
             <p>You can set a <strong>timeout</strong> for the page load, which is very useful when using slow proxies.</p>
 
             <!-- BROWSERACTION BLOCK -->
             <h1 id="browseraction">BrowserAction Block</h1>
             <p>The BrowserAction bock lets you interact with the selenium browser itself.</p>
-            <img src="ss/stacker/013-browseraction.JPG"/>
+            <img src="ss/stacker/013-browseraction.jpg"/>
 
             <!-- ELEMENTACTION BLOCK -->
             <h1 id="elementaction">ElementAction Block</h1>
             <p>The ElementAction block lets you interact with elements on the page inside the selenium browser.</p>
-            <img src="ss/stacker/014-elementaction.JPG"/>
+            <img src="ss/stacker/014-elementaction.jpg"/>
             <p>The element can be targeted thanks to one of the available locators: id, class, name, tag, selector and xpath.</p>
 
             <!-- EXECUTEJS BLOCK -->
             <h1 id="executejs">ExecuteJS Block</h1>
             <p>The ExecuteJS block lets you execute JavaScript code inside the selenium browser.</p>
-            <img src="ss/stacker/015-executejs.JPG"/>
+            <img src="ss/stacker/015-executejs.jpg"/>
             <p>Variable replacement will be performed inside the script's text before running it, so you can use the normal variable syntax.</p>
 
             <!-- DEBUGGER -->
@@ -281,7 +281,7 @@
               is required for slicing the data and setting up the correct variables) and a test proxy (even with auth or chain) that can be enabled with the checkbox
               to the left of the proxy type selector.</p>
 
-            <img src="ss/stacker/016-debugger.JPG"/>
+            <img src="ss/stacker/016-debugger.jpg"/>
 
             <p><strong>Step-by-step (SBS)</strong> mode will let you execute one line at a time when running the LoliScript code.</p>
 
