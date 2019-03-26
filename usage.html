@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>This is the HOMEPAGE. </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="This is the HOMEPAGE. ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header" style="width: 100%">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="png" src="logo.png" alt="" width="50px" height="50px">
+              </a>
+
+              <a class="navbar-brand padded" href="index.html">
+                <span>OpenBullet</span>
+              </a>
+
+              <div style="float:right;">
+                <a class="navbar-brand padded" href="usage.html">
+                    <span>Usage</span>
+                </a>
+
+                <a class="navbar-brand padded" href="stacker.html">
+                    <span>Stacker</span>
+                </a>
+      
+                <a class="navbar-brand padded" href="api/RuriLib.html">
+                    <span>RuriLib</span>
+                </a>
+    
+                <a class="navbar-brand padded" href="contribute.html">
+                    <span>Contribute</span>
+                </a>
+      
+              </div>
+              
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+            <h1 id="license">Before you start</h1>
+            <p>Please read the <a href="https://github.com/openbullet/openbullet/blob/master/LICENSE">license agreement</a> if you want to use this software.</p>
+            
+            
+            <!-- GETTING STARTED -->
+            <h1 id="getting-started">Getting started</h1>
+            <p>When you first start OpenBullet, it will generate the default settings files and the database where all the hits (and more) will be stored.</p>
+            <p>You can notice a menu in the top part that lets you access all the different functionalities of OpenBullet</p>
+            <img src="ss/000-menu.jpg"/>
+            <p>At the right of the window there are two buttons, used to view the program's log (it must be enabled in the settings first) and take a screenshot of the window.</p>
+
+            <!-- RUNNER MANAGER -->
+            <h1 id="runner-manager">Runner Manager</h1>
+            <p>When you click on the <string>Runner</string> menu option, you will be welcomed by this screen</p>
+            <img src="ss/001-runner-manager.jpg"/>
+            <p>The 'Runner' mentioned in the message is a worker that takes some data from a Wordlist and executes the multi-threaded tasks basing on a previously made Config file.</p>
+            <p>The Runner overview, visible in the Runner Manager page, looks like this</p>
+            <img src="ss/002-runner-overview.jpg"/>
+            <p>You can quickly see the progress, the Checks Per Minute (CPM) and the hit count of the Runner. The Runner's fields like the number of bots to use or the Config file to use can be set directly from this screen by clicking on the corresponding label.</p>
+            <p>If you click on an empty area of the Runner overview, the complete Runner page will appear</p>
+            <img src="ss/003-runner.jpg"/>
+            <p>From this page you can easily see the list of hits and the log for the past tasks that the Runner performed.</p>
+            
+            <!-- PROXY MANAGER -->
+            <h1 id="proxy-manager">Proxy Manager</h1>
+            <p>The Proxy Manager lets you import proxies and test them against a custom website to see if they provide full access to the internet.
+                Proxies are stored inside the OpenBullet database so you don't lose them when closing the program.</p>
+            <img src="ss/004-proxy-manager.JPG"/>
+            <p>It supports proxies of the types HTTP(s), Socks4/4a/5 and Proxy Chains. Proxies that require authorization through username and password are supported.
+                    When importing proxies that require authorization or that are chained together you will need to use a custom syntax.</p>
+            <img src="ss/005-proxy-import.JPG"/>
+            
+            <!-- WORDLIST MANAGER -->
+            <h1 id="wordlist-manager">Wordlist Manager</h1>
+            <p>The Wordlist Manager lets you import wordlists from the disk, in order to use them (along with a Config) to test a website.
+                Only the file information is saved in the database, because the files on disk can get pretty big and it's better to leave them where they are.</p>
+            <img src="ss/006-wordlist-manager.jpg"/>    
+
+            <!-- CONFIG MANAGER -->
+            <h1 id="config-manager">Config Manager</h1>
+            <p>The Config Manager will display all the Config files that are stored inside the 'Configs' folder of the program. Configs are not stored inside
+                the database to allow for quick edits directly on the files. Configs can be placed in subfolders named after the Category you want to be displayed.
+                If you add new Config files to the folder, click the Rescan button in order to let OpenBullet detect them and add them to the displayed list.</p>
+            <img src="ss/007-config-manager.jpg"/>
+            <p>When you select a Config from the list, additional information will be displayed at the bottom.</p>
+            <p>If you click the Edit button, the selected Config will be loaded into <strong>Stacker</strong>. For an in depth guide on Config creation
+            <a href="configs.html">click here</a>.</p>
+
+            <!-- HITS DB -->
+            <h1 id="hits-db">Hits DB</h1>
+            <p>The Hits DB is a visualization of all the hits found while running Configs. The hits contain information such as the data scraped from the website,
+                 the input data that lead to a successful scrape and the proxy that was used.</p>
+            <p>The hits are all stored inside the database so they aren't lost when the program is closed.</p>
+            <img src="ss/008-hits-db.jpg"/>
+            
+            <!-- LIST GENERATOR -->
+            <h1 id="list-generator">List Generator</h1>
+            <p>The List Generator allows you to generate all the possible combinations starting from a base string with jolly characters, using a character set.
+                Be careful because the size of the generated list grows exponentially basing on the number of jolly characters and the size of the character set.</p>
+            <img src="ss/009-list-generator.JPG"/>
+
+            <!-- SETTINGS -->
+            <h1 id="settings">Settings</h1>
+            <p>The settings are split into RuriLib settings, that will affect the Runner behaviour, and OpenBullet settings, which only affect the GUI.</p>
+            <img src="ss/010-settings.JPG"/>
+
+            <!-- LOG -->
+            <h1 id="log">Log</h1>
+            <p>The OpenBullet log displays a list of information (including warnings and errors) that can help debug an issue. 
+                The log is disabled by default, and can be also written to a file that is cleared every time you launch the program.</p>
+            <img src="ss/011-log.JPG"/>
+
+            </article>
+
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
