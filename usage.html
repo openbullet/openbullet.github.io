@@ -87,7 +87,6 @@
             <h1 id="license">Before you start</h1>
             <p>Please read the <a href="https://github.com/openbullet/openbullet/blob/master/LICENSE">license agreement</a> if you want to use this software.</p>
             
-            
             <!-- GETTING STARTED -->
             <h1 id="getting-started">Getting started</h1>
             <p>When you first start OpenBullet, it will generate the default settings files and the database where all the hits (and more) will be stored.</p>
@@ -158,6 +157,32 @@
             <p>The OpenBullet log displays a list of information (including warnings and errors) that can help debug an issue. 
                 The log is disabled by default, and can be also written to a file that is cleared every time you launch the program.</p>
             <img src="ss/011-log.jpg"/>
+
+            <!-- ENVIRONMENT -->
+            <h1 id="environment">Environment</h1>
+            <p>The Environment.ini file is located inside the Settings folder. It is very important to set it up well to take full advantage of the flexibility that OpenBullet offers.
+              There are currently 3 things you can customize through the Environment file:</p>
+            <ul>
+              <li><strong>Wordlist Type (WLTYPE)</strong> defines the type of data that can be found in a given Wordlist, and has two jobs: verifying that the data respects some
+              requirements (for example the presence of the @ in an email or a correct URL format) and splitting the data in slices that will be initialized as variables when the bot starts its job.
+              There are 5 fields you can set:
+              <ul>
+                <li><strong>Name: </strong>the name of the type.</li>
+                <li><strong>Regex: </strong>the regular expression pattern to verify in order to check if the data is well formatted or if it should be discarded.</li>
+                <li><strong>Verify: </strong>whether the regular expression should be verified or not.</li>
+                <li><strong>Separator: </strong>a character or string that separates the values that need to be split.</li>
+                <li><strong>Slices: </strong>the comma-separated names of all the variables that will be initialized after splitting the input data using the given separator. For example if
+                the input data is in the format <code>Hello|123</code>, the separator is <code>|</code> and the slices are <code>WORD,NUMBER</code> then when the data needs to be processed
+                the program will slice it and define two variables: <code>WORD</code> with the value <code>Hello</code> and <code>NUMBER</code> with the value <code>123</code>.</li>
+              </ul>
+              </li>
+              <li><strong>Custom KeyChain (CUSTOMKC)</strong> defines a possible name and color for a custom KeyChain inside the KeyCheck block. Defining these is useful when you are limited
+              by the fixed amount of KeyChain types that the program offers and want more flexibility, for example in the case a site is down you could make a KeyChain with <code>Name=DOWN</code>
+              and <code>Color=Blue</code>. Allowed color names can be found <a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netframework-4.7.2">here</a>.</li>
+              <li><strong>Export Format (EXPFORMAT)</strong> defines a possible format in which hits can be copied or saved (from HitsDB, using the right click menu and selecting Custom).
+              The values that can be used are: <code>&lt;DATA&gt;</code>, <code>&lt;PROXY&gt;</code>, <code>&lt;DATE&gt;</code>, <code>&lt;CONFIG&gt;</code>, <code>&lt;WORDLIST&gt;</code>, 
+              <code>&lt;TYPE&gt;</code>, <code>&lt;CAPTURE&gt;</code> plus any variable that was captured by the bot, using the usual format <code>&lt;VARIABLE&gt;</code>.</li>
+            </ul>
 
             </article>
 
