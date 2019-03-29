@@ -141,6 +141,15 @@
             <p>Variables can be <strong>hidden</strong> and not be normally editable by the user nor displayed, like in the case of HEADERS, COOKIES, SOURCE etc.</p>
             <p>In order to exploit all the potential that variables offer, take a look at the Utility Block and to LoliScript commands like SET and DELETE.</p>
             <img src="ss/stacker/002-variables.jpg"/>
+            <p>There are some hidden variables that are automatically set and cannot be overwritten normally (you can do it with the SET command in LoliScript). These variables are not displayed
+              in the debugger Data tab and they are listed below, along with their type:</p>
+            <ul>
+              <li><strong>ADDRESS (Single): </strong>the URL of the last HTTP response or the URL displayed in the browser's current page.</li>
+              <li><strong>RESPONSECODE (Single): </strong>the response code of the last HTTP response.</li>
+              <li><strong>SOURCE (Single): </strong>the response source of the last HTTP response (the data after the headers, encoded in ASCII) or of the current page in the browser.</li>
+              <li><strong>COOKIES (Dictionary): </strong>the name and value of all cookies saved during HTTP communications (both sent and received).</li>
+              <li><strong>HEADERS (Dictionary): </strong>the name and value of the headers of the last HTTP response.</li>
+            </ul>
 
             <!-- BLOCKS -->
             <h1 id="blocks">Blocks</h1>
