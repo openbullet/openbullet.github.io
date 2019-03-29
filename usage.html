@@ -183,6 +183,13 @@
               The values that can be used are: <code>&lt;DATA&gt;</code>, <code>&lt;PROXY&gt;</code>, <code>&lt;DATE&gt;</code>, <code>&lt;CONFIG&gt;</code>, <code>&lt;WORDLIST&gt;</code>, 
               <code>&lt;TYPE&gt;</code>, <code>&lt;CAPTURE&gt;</code> plus any variable that was captured by the bot, using the usual format <code>&lt;VARIABLE&gt;</code>.</li>
             </ul>
+              
+            <!-- DATABASE -->
+            <h1 id="database">DataBase</h1>
+            <p>The database used in OpenBullet is <a href="http://www.litedb.org/">LiteDB</a>, a very light embedded NoSQL database. The file is stored inside the DB folder and it can contain the collections
+              Proxies, Wordlists, Hits and Records. You can use this amazing open source software <a href="https://github.com/JosefNemec/LiteDbExplorer">LiteDB Explorer</a> in order to browse or
+              fix the database. OpenBullet might struggle when the database is big or when you execute a query on a lot of entries. This program will also allow you to execute advanced queries
+              that are not possible with just OpenBullet.</p>
 
             </article>
 
