@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>OpenBullet - Contribute</title>
+    <title>OpenBullet - Examples</title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="This is the HOMEPAGE. ">
     <meta name="generator" content="docfx 2.40.12.0">
@@ -43,25 +43,26 @@
               </a>
 
               <div style="float:right;">
-                    <a class="navbar-brand padded" href="usage.html">
-                        <span>Usage</span>
-                    </a>
-    
-                    <a class="navbar-brand padded" href="stacker.html">
-                        <span>Stacker</span>
-                    </a>
+                <a class="navbar-brand padded" href="usage.html">
+                    <span>Usage</span>
+                </a>
 
-                    <a class="navbar-brand padded" href="examples.html">
-                      <span>Examples</span>
-                    </a>
-          
-                    <a class="navbar-brand padded" href="api/RuriLib.html">
-                        <span>RuriLib</span>
-                    </a>
-        
-                    <a class="navbar-brand padded" href="contribute.html">
-                        <span>Contribute</span>
-                    </a>
+                <a class="navbar-brand padded" href="stacker.html">
+                    <span>Stacker</span>
+                </a>
+
+                <a class="navbar-brand padded" href="examples.html">
+                  <span>Examples</span>
+                </a>
+      
+                <a class="navbar-brand padded" href="api/RuriLib.html">
+                    <span>RuriLib</span>
+                </a>
+    
+                <a class="navbar-brand padded" href="contribute.html">
+                    <span>Contribute</span>
+                </a>
+      
               </div>
               
             </div>
@@ -87,21 +88,45 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+            <h1 id="license">Before you start</h1>
+            <p>Please read the <a href="https://github.com/openbullet/openbullet/blob/master/LICENSE">license agreement</a> if you want to use this software.</p>
             
-            <h1 id="help-dev">Help the developement</h1>
-            <p>If you are a C# coder, you are invited to contribute to the developement of the project by making <a href="https://hisham.hm/2016/01/01/how-to-make-a-pull-request-on-github-a-quick-tutorial/">pull requests</a> to the <a href="https://github.com/openbullet/openbullet/">official repository</a>.</p>
-            
-            <h1 id="help-doc">Improve the Docs</h1>
-            <p>If your knowledge of the English language is good and you want to improve the usage guide or write additional guides for the program, feel free to make a pull request.
-                This whole site is hosted on GitHub pages and the respository can be found <a href="https://github.com/openbullet/openbullet.github.io">here</a>.</p>
-
-            <h1 id="donate">Donate</h1>
-            <p>You can help the developer of the software by making a donation in bitcoin to the following wallet <strong>39yMkox6pP8tnSC7rZ5EM4nUUHgPbg1fKM</strong></p>
-            
-            <h1 id="share">Share</h1>
-            <p>If you cannot code and don't have any money to donate, you can still help by sharing this project to let other people know about it.</p>
+            <!-- SELENIUM UNIT TESTING -->
+            <h1 id="selenium-unit-testing">Selenium Unit Testing</h1>
+            <p>You can use OpenBullet to perform browser-based tests on web pages and see how they react. We will show a SUCCESS status when our test passed and a FAIL when it does not.</p>
+            <p>First of all create a Config, go to the <b>Other Options > Selenium</b> tab and tick the two boxes on the left: <i>Always Open browser at the start</i> and <i>Always Close browser at the end</i>.</p>
+            <p>Then go to the <b>Stacker</b> tab, click on the <b>Switch to LoliScript</b> button and paste the code below.</p>
+            <code>
+NAVIGATE &quot;https://google.com&quot;<br />
+<br />
+IF &quot;&lt;BOTNUM&gt;&quot; EqualTo &quot;0&quot;<br />
+PRINT To debug the single tests, change the IFs below so that BotNum equals 0, which is the bot number of the debugger.<br />
+ENDIF<br />
+<br />
+IF &quot;&lt;BOTNUM&gt;&quot; EqualTo &quot;1&quot;<br />
+ELEMENTACTION SELECTOR &quot;[spellcheck=false]&quot; SendKeys &quot;Hello World&quot;<br />
+BROWSERACTION SendKeys &quot;&lt;ENTER&gt;&quot;<br />
+PARSE &quot;&lt;SOURCE&gt;&quot; CSS &quot;div.r a h3&quot; &quot;innerHTML&quot; -&gt; CAP &quot;RESULT&quot;<br />
+IF &quot;&lt;RESULT&gt;&quot; Contains &quot;Wikipedia&quot;<br />
+SET STATUS SUCCESS<br />
+ENDIF<br />
+<br />
+IF &quot;&lt;BOTNUM&gt;&quot; EqualTo &quot;2&quot;<br />
+ELEMENTACTION SELECTOR &quot;[spellcheck=false]&quot; SendKeys &quot;Firefox&quot;<br />
+BROWSERACTION SendKeys &quot;&lt;ENTER&gt;&quot;<br />
+PARSE &quot;&lt;SOURCE&gt;&quot; CSS &quot;div.r a&quot; &quot;href&quot; -&gt; CAP &quot;RESULT&quot;<br />
+IF &quot;&lt;RESULT&gt;&quot; Contains &quot;mozilla.org&quot;<br />
+SET STATUS SUCCESS<br />
+ENDIF<br />
+<br />
+IF &quot;&lt;STATUS&gt;&quot; EqualTo &quot;NONE&quot;<br />
+SET STATUS FAIL<br />
+ENDIF<br />
+            </code><br />
+            <p>After that, go back to the <b>Other Options > General</b> tab and set the Recommended bots to 2 since we have to perform 2 tests.</p>
+            <p>Finally, <b>save</b> the Config, create a <b>Runner</b>, import a 2-line <b>Wordlist</b> and the newly created Config and click <b>START</b>. If everything is done right, the Runner should output 2 Hits and 0 Fails.</p>
             </article>
-            
+
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
