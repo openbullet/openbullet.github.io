@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>OpenBullet - Examples</title>
+    <title>OpenBullet - Remote</title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="This is the HOMEPAGE. ">
     <meta name="generator" content="docfx 2.40.12.0">
@@ -92,43 +92,53 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-            <h1 id="license">Before you start</h1>
-            <p>Please read the <a href="https://github.com/openbullet/openbullet/blob/master/LICENSE">license agreement</a> if you want to use this software.</p>
+
+            <!-- ABOUT -->
+            <h1 id="about">About this guide</h1>
+            <p>This guide will cover how to host the <strong>OpenBullet API</strong> and how to connect it to your <strong>OpenBullet</strong> client.
             
-            <!-- SELENIUM UNIT TESTING -->
-            <h1 id="selenium-unit-testing">Selenium Unit Testing</h1>
-            <p>You can use OpenBullet to perform browser-based tests on web pages and see how they react. We will show a SUCCESS status when our test passed and a FAIL when it does not.</p>
-            <p>First of all create a Config, go to the <b>Other Options > Selenium</b> tab and tick the two boxes on the left: <i>Always Open browser at the start</i> and <i>Always Close browser at the end</i>.</p>
-            <p>Then go to the <b>Stacker</b> tab, click on the <b>Switch to LoliScript</b> button and paste the code below.</p>
-            <code>
-NAVIGATE &quot;https://google.com&quot;<br />
-<br />
-IF &quot;&lt;BOTNUM&gt;&quot; EqualTo &quot;0&quot;<br />
-PRINT To debug the single tests, change the IFs below so that BotNum equals 0, which is the bot number of the debugger.<br />
-ENDIF<br />
-<br />
-IF &quot;&lt;BOTNUM&gt;&quot; EqualTo &quot;1&quot;<br />
-ELEMENTACTION SELECTOR &quot;[spellcheck=false]&quot; SendKeys &quot;Hello World&quot;<br />
-BROWSERACTION SendKeys &quot;&lt;ENTER&gt;&quot;<br />
-PARSE &quot;&lt;SOURCE&gt;&quot; CSS &quot;div.r a h3&quot; &quot;innerHTML&quot; -&gt; CAP &quot;RESULT&quot;<br />
-IF &quot;&lt;RESULT&gt;&quot; Contains &quot;Wikipedia&quot;<br />
-SET STATUS SUCCESS<br />
-ENDIF<br />
-<br />
-IF &quot;&lt;BOTNUM&gt;&quot; EqualTo &quot;2&quot;<br />
-ELEMENTACTION SELECTOR &quot;[spellcheck=false]&quot; SendKeys &quot;Firefox&quot;<br />
-BROWSERACTION SendKeys &quot;&lt;ENTER&gt;&quot;<br />
-PARSE &quot;&lt;SOURCE&gt;&quot; CSS &quot;div.r a&quot; &quot;href&quot; -&gt; CAP &quot;RESULT&quot;<br />
-IF &quot;&lt;RESULT&gt;&quot; Contains &quot;mozilla.org&quot;<br />
-SET STATUS SUCCESS<br />
-ENDIF<br />
-<br />
-IF &quot;&lt;STATUS&gt;&quot; EqualTo &quot;NONE&quot;<br />
-SET STATUS FAIL<br />
-ENDIF<br />
-            </code><br />
-            <p>After that, go back to the <b>Other Options > General</b> tab and set the Recommended bots to 2 since we have to perform 2 tests.</p>
-            <p>Finally, <b>save</b> the Config, create a <b>Runner</b>, import a 2-line <b>Wordlist</b> and the newly created Config and click <b>START</b>. If everything is done right, the Runner should output 2 Hits and 0 Fails.</p>
+            <!-- GETTING STARTED -->
+            <h1 id="getting-started">Getting started</h1>
+            <p>First things first, you need to download the API from <a href="">here</a>. Then make sure you have the <a href="https://dotnet.microsoft.com/download/dotnet-core/2.2">dotnet core sdk 2.2</a> installed.
+            The dotnet core sdk is available for Windows, MacOS or Linux so you can host this web API on any VPS or any host that gives you root access.</p>
+
+            <!-- CONFIGURATION -->
+            <h1 id="configuration">Configuration</h1>
+            <p>If you open the appsettings.json file you will see at the beginning 3 editable fields:</p>
+            <ul>
+                <li><strong>db</strong> - the LiteDB file where users will be stored.</li>
+                <li><strong>configFolder</strong> - the folder on the filesystem where the configs to be served are stored.</li>
+                <li><strong>secretKey</strong> - the secret key used to access the /api/users endpoint and manage users.</li>
+            </ul>
+            <p>Now create a Configs folder (it's already included in the precompiled version) and inside it, for the sake of this tutorial, make a folder called <code>test</code>
+            and add any OpenBullet <code>.loli</code> config inside it.</p>
+
+            <!-- RUNNING -->
+            <h1 id="running">Running</h1>
+            <p>Open a terminal, navigate to the folder where OpenBulletAPI.dll is located and type <code>dotnet ./OpenBulletAPI.dll</code>. This will execute the application
+            which by default will be remotely accessible on the HTTP port 5000 (or HTTPS port 5001 if configured).</p>
+            <p><strong>Note:</strong> If for any reason it's not working when you type <code>http://localhost:5000</code>, I recommend compiling the code from the repository and comment out the
+                line that says <code>.UseUrls("http://0.0.0.0:5000")</code> in the file <code>Program.cs</code>. This is the line that opens the API to be accessed
+                from anywhere but it might not work when accessed from localhost. You might even want to change that general IP with your own public IP or domain name like <code>http://example.com:5000</code>.</p>
+            
+            <!-- ADMINISTRATION -->
+            <h1 id="administration">Administration</h1>
+            <p>Download the OpenBullet Admin Panel from <a href="">here</a>. After you open it, set up your API URL (e.g. <code>http://localhost:5000</code>) and your
+            secret key, then hit refresh. If no error is shown, you can proceed to add a user. For this tutorial, add a user by generating an api key and writing <code>test</code>
+            inside the <code>groups</code> textbox.</p>
+
+            <!-- SOURCES SETUP -->
+            <h1 id="sources-setup">Sources Setup</h1>
+            <p>Now update OpenBullet to the latest version and go to the <strong>Settings &gt; OB &gt; Sources</strong> tab. Add a Source and type the path where configs are
+            pulled from (by default it's api/configs e.g. <code>http://localhost:5000/api/configs</code>). After that, paste the Api Key of your user and save the settings.</p>
+            <p>Finally, go to the <strong>Configs Manager</strong> page and click on <strong>Rescan</strong>. If everything went right, any config on your remote <code>test</code>
+            folder will be pulled down to the client. These configs exclusively reside in memory and editing/saving is disabled.</p>
+
+            <!-- USERPASS AUTH -->
+            <h1 id="userpass-auth">UserPass Authentication</h1>
+            <p>If you want you can also use Username and Password to authenticate to the api. You will have to implement a new call to another external API (e.g. a website, forum)
+                where the groups are returned to the OpenBullet API which will provide the correct configs to the user.</p>
+
             </article>
 
           </div>
