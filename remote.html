@@ -140,6 +140,16 @@
             <p>If you want you can also use Username and Password to authenticate to the api. You will have to implement a new call to another external API (e.g. a website, forum)
                 where the groups are returned to the OpenBullet API which will provide the correct configs to the user.</p>
 
+            <!-- OWN API -->
+            <h1 id="own-api">Own API</h1>
+            <p>If you wish to implement your own API written in another language (nodejs, python, go, php...) you will need to follow some specifications to make it work with the original OpenBullet client.</p>
+            <p>The <strong>request</strong> sent by OpenBullet is a simple GET request with the <code>Authorization</code> header set. This can be:</p>
+            <ul>
+                <li><code>Authorization: API_KEY</code> if the user authenticates via Api Key</li>
+                <li><code>Authorization: Basic BASE_64</code> where BASE_64 is <code>USER:PASS</code> encoded as base64</li>
+            </ul>
+            <p>The <strong>response</strong> of the API must be a <strong>Zip</strong> file containing in its root all the <code>.loli</code> configs you want the user to access.</p>
+
             </article>
 
           </div>
