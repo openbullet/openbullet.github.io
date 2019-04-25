@@ -106,7 +106,7 @@
             <h1 id="configuration">Configuration</h1>
             <p>If you open the appsettings.json file you will see at the beginning 3 editable fields:</p>
             <ul>
-                <li><strong>db</strong> - the LiteDB file where users will be stored.</li>
+                <li><strong>db</strong> - the LiteDB file where users will be stored (if the file does not exist it will be created automatically).</li>
                 <li><strong>configFolder</strong> - the folder on the filesystem where the configs to be served are stored.</li>
                 <li><strong>secretKey</strong> - the secret key used to access the /api/users endpoint and manage users.</li>
             </ul>
