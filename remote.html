@@ -149,6 +149,7 @@
                 <li><code>Authorization: Basic BASE_64</code> where BASE_64 is <code>USER:PASS</code> encoded as base64</li>
             </ul>
             <p>The <strong>response</strong> of the API must be a <strong>Zip</strong> file containing in its root all the <code>.loli</code> configs you want the user to access.</p>
+            <p>The response can also have a <code>Result</code> header. In case that header's value is <code>Error</code>, OB will prompt to the user the contents of the body of the response (ASCII encoded).</p>
 
             </article>
 
