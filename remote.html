@@ -117,10 +117,7 @@
             <h1 id="running">Running</h1>
             <p>Open a terminal, navigate to the folder where OpenBulletAPI.dll is located and type <code>dotnet ./OpenBulletAPI.dll</code>. This will execute the application
             which by default will be remotely accessible on the HTTP port 5000 (or HTTPS port 5001 if configured).</p>
-            <p><strong>Note:</strong> If for any reason it's not working when you type <code>http://localhost:5000</code>, I recommend compiling the code from the repository and comment out the
-                line that says <code>.UseUrls("http://0.0.0.0:5000")</code> in the file <code>Program.cs</code>. This is the line that opens the API to be accessed
-                from anywhere but it might not work when accessed from localhost. You might even want to change that general IP with your own public IP or domain name like <code>http://example.com:5000</code>.</p>
-                <p><strong>Another way</strong> to launch using a custom URL is using the <code>--urls</code> command line parameter.</p>
+            <p><strong>Note:</strong> If for any reason it's not working when you type <code>http://localhost:5000</code>, I recommend using this command to start the webserver <code>dotnet ./OpenBulletAPI.dll --urls "http://*:5000"</code>.</p>
             
             <!-- ADMINISTRATION -->
             <h1 id="administration">Administration</h1>
@@ -149,6 +146,7 @@
                 <li><code>Authorization: Basic BASE_64</code> where BASE_64 is <code>USER:PASS</code> encoded as base64</li>
             </ul>
             <p>The <strong>response</strong> of the API must be a <strong>Zip</strong> file containing in its root all the <code>.loli</code> configs you want the user to access.</p>
+            <p>On the latest versions of OpenBullet, if you place folders in the Zip file that you send back to the client, they will be interpreted as category names and displayed in the Config Manager accordingly.</p>
             <p>The response can also have a <code>Result</code> header. In case that header's value is <code>Error</code>, OB will prompt to the user the contents of the body of the response (ASCII encoded).</p>
 
             </article>
