@@ -292,6 +292,10 @@ document.addEventListener('DOMContentLoaded', function() {
   frame();
 });
 
+window.addEventListener('resize', function() {
+  window.location.reload();
+}, true);
+
  
 /**
  * Some old util I use at times
